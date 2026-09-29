@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#1a1416" />
+  <title>Вина</title>
+  <link rel="stylesheet" href="/site.css?v=photo3" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="/" id="brandHome">Вина</a>
+      <nav class="nav" id="tabs" aria-label="Разделы">
+        <button type="button" class="nav-link is-selected" data-tab="catalog" aria-selected="true">Каталог</button>
+        <button type="button" class="nav-link" data-tab="recognize" aria-selected="false">Распознавание</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <section id="panel-catalog">
+      <h1>Каталог</h1>
+      <p class="lede">Все вина. Нажмите карточку, чтобы открыть страницу.</p>
+      <div class="search-wrap">
+        <input class="search" id="search" type="text" placeholder="Название, винодельня или сорт" autocomplete="off" enterkeyhint="search" aria-label="Поиск по каталогу" />
+        <button type="button" class="search-clear" id="searchClear" hidden aria-label="Очистить поиск">×</button>
+      </div>
+      <p class="count" id="count">Загрузка каталога…</p>
+      <p class="empty" id="empty" hidden>Ничего не найдено</p>
+      <p class="err" id="catalogError" hidden></p>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <section class="chat" id="panel-recognize" hidden>
+      <div class="thread" id="thread" role="log" aria-live="polite">
+        <div class="msg msg-bot">
+          <p class="who">Вина</p>
+          <div class="bubble bubble-bot">
+            <p>Пришлите фото этикетки или напишите, какое вино нужно: сорт, вкус, к какой еде. Если вино есть в каталоге, отвечу карточкой. Если нет — покажу похожие.</p>
+          </div>
+        </div>
+      </div>
+      <div class="composer" id="composer">
+        <form class="ask-row" id="askForm">
+          <input class="ask-input" id="ask" type="text" maxlength="400" autocomplete="off" enterkeyhint="send" placeholder="Сорт, вкус или к какой еде" aria-label="Какое вино нужно" />
+          <button class="btn primary ask-send" id="askSend" type="submit">Подобрать</button>
+        </form>
+        <div class="touch-tools" id="touchTools">
+          <label class="btn primary">
+            Камера
+            <input id="camera" type="file" accept="image/*" capture="environment" />
+          </label>
+          <label class="btn">
+            Галерея
+            <input id="gallery" type="file" accept="image/*" />
+          </label>
+        </div>
+        <div class="desk-tools" id="deskTools">
+          <label class="btn primary">
+            Выбрать фото
+            <input id="file" type="file" accept="image/*" />
+          </label>
+          <p class="composer-hint">или перетащите фото сюда</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="panel-wine" hidden>
+      <button type="button" class="back-link" id="wineBack">Назад</button>
+      <article class="wine-page" id="winePage"></article>
+    </section>
+  </main>
+
+  <script>
+    const searchInput = document.getElementById("search");
+    const searchClear = document.getElementById("searchClear");
+    const countEl = document.getElementById("count");
+    const emptyEl = document.getElementById("empty");
+    const catalogError = document.getElementById("catalogError");
+    const grid = document.getElementById("grid");
+    const tabButtons = document.querySelectorAll("[data-tab]");
+    const panelCatalog = document.getElementById("panel-catalog");
+    const panelRecognize = document.getElementById("panel-recognize");
+    const panelWine = document.getElementById("panel-wine");
+    const winePage = document.getElementById("winePage");
+    const wineBack = document.getElementById("wineBack");
+    const tabs = document.getElementById("tabs");
+    const thread = document.getElementById("thread");
+    const composer = document.getElementById("composer");
+    const cameraInput = document.getElementById("camera");
+    const galleryInput = document.getElementById("gallery");
+    const fileInput = document.getElementById("file");
+    const askForm = document.getElementById("askForm");
+    const askInput = document.getElementById("ask");
+
+    let catalog = [];
+    let currentTab = "catalog";
+    let returnTab = "catalog";
+    let returnQuery = "";
+    const jobs = [];
+    let busy = false;
+
+    function escapeHtml(value) {
+      return String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function showTab(name) {
+      currentTab = name === "recognize" ? "recognize" : "catalog";
+      panelWine.hidden = true;
+      tabs.hidden = false;
+      panelCatalog.hidden = currentTab !== "catalog";
+      panelRecognize.hidden = currentTab !== "recognize";
+      document.body.classList.toggle("is-chat", currentTab === "recognize");
+      document.body.classList.remove("is-wine");
+      tabButtons.forEach((button) => {
+        const on = button.dataset.tab === currentTab;
+        button.classList.toggle("is-selected", on);
+        button.setAttribute("aria-selected", on ? "true" : "false");
+      });
+      if (currentTab === "recognize" && thread.querySelector(".msg")) pinThread(thread, false);
+    }
+
+    function scrollCatalogToTop() {
+      const run = () => {
+        const seen = new Set();
+        const nodes = [];
+        let node = grid;
+        while (node) {
+          nodes.push(node);
+          node = node.parentElement;
+        }
+        nodes.push(document.scrollingElement, document.documentElement, document.body);
+        nodes.forEach((el) => {
+          if (!el || seen.has(el)) return;
+          seen.add(el);
+          el.scrollTop = 0;
+        });
+        window.scrollTo(0, 0);
+      };
+      run();
+      requestAnimationFrame(run);
+    }
+
+    tabButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        showTab(button.dataset.tab);
+        if (button.dataset.tab === "catalog") scrollCatalogToTop();
+      });
+    });
+
+    document.getElementById("brandHome").addEventListener("click", (event) => {
+      event.preventDefault();
+      returnTab = "catalog";
+      if (!panelWine.hidden) {
+        history.pushState({ tab: "catalog", q: searchInput.value }, "", "/");
+      }
+      showTab("catalog");
+      scrollCatalogToTop();
+    });
+
+    const BOTTLE_MARK = `<svg class="photo-mark" viewBox="0 0 48 80" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M18 4h12v12c8 3 10 10 10 18v30c0 7-6 12-16 12S8 71 8 64V34c0-8 2-15 10-18V4z"/><path fill="none" stroke="currentColor" stroke-width="1.8" d="M16 40h16"/></svg>`;
+
+    function photoLabel(wine) {
+      const name = String((wine && wine.name) || "").trim();
+      return name || "Нет фото";
+    }
+
+    function photoUrl(wine) {
+      // Trust the API image field: empty means no file in catalog_meta.
+      // Do not invent /catalog-image/{slug} — that only produces 404 noise.
+      return String((wine && wine.image) || "").trim();
+    }
+
+    function fallbackHtml(wine) {
+      return `<div class="photo-fallback">${BOTTLE_MARK}<span class="photo-fallback-name">${escapeHtml(photoLabel(wine))}</span></div>`;
+    }
+
+    function photoHtml(wine) {
+      const src = photoUrl(wine);
+      if (!src) return `<div class="wine-photo is-missing">${fallbackHtml(wine)}</div>`;
+      return `<div class="wine-photo is-missing"><img alt="" loading="lazy" decoding="async" src="${escapeHtml(src)}" />${fallbackHtml(wine)}</div>`;
+    }
+
+    function stageHtml(wine) {
+      const src = photoUrl(wine);
+      const alt = escapeHtml(photoLabel(wine));
+      if (!src) return `<div class="wine-stage is-missing">${fallbackHtml(wine)}</div>`;
+      return `<div class="wine-stage is-missing"><img alt="${alt}" loading="eager" fetchpriority="high" decoding="async" src="${escapeHtml(src)}" />${fallbackHtml(wine)}</div>`;
+    }
+
+    function photoFrame(node) {
+      if (!(node instanceof HTMLImageElement)) return null;
+      return node.closest(".wine-photo, .wine-stage");
+    }
+
+    function revealPhoto(img) {
+      const frame = photoFrame(img);
+      if (!frame) return;
+      if (img.complete && img.naturalWidth > 0) {
+        frame.classList.remove("is-missing");
+        return;
+      }
+      if (img.complete) {
+        frame.classList.add("is-missing");
+      }
+    }
+
+    function revealPhotos(root) {
+      const scope = root || document;
+      scope.querySelectorAll(".wine-photo img, .wine-stage img").forEach(revealPhoto);
+    }
+
+    document.body.addEventListener("load", (event) => {
+      const frame = photoFrame(event.target);
+      if (!frame) return;
+      frame.classList.remove("is-missing");
+    }, true);
+
+    document.body.addEventListener("error", (event) => {
+      const frame = photoFrame(event.target);
+      if (!frame) return;
+      frame.classList.add("is-missing");
+    }, true);
+
+    function wineCardHtml(wine, options) {
+      const opts = options || {};
+      const extra = opts.extra || "";
+      const compact = opts.compact ? " wine-card--compact" : "";
+      const closest = opts.closest ? " wine-card--closest" : "";
+      const badge = opts.closest
+        ? `<span class="closest-chip">${escapeHtml(opts.badge || "Самое похожее")}</span>`
+        : "";
+      return `<button type="button" class="wine-card${compact}${closest}" data-slug="${escapeHtml(wine.slug || "")}">
+        ${photoHtml(wine)}
+        <div class="wine-copy">
+          ${badge}
+          <h3 class="wine-title">${escapeHtml(wine.name || "Без названия")}</h3>
+          <p class="wine-winery">${escapeHtml(wine.winery || "")}</p>
+          ${extra}
+        </div>
+      </button>`;
+    }
+
+    function factLine(label, value) {
+      const text = String(value || "").trim();
+      if (!text) return "";
+      return `<li><b>${escapeHtml(label)}</b><span>${escapeHtml(text)}</span></li>`;
+    }
+
+    function chipHtml(wine) {
+      return [wine.category, wine.color, wine.grape]
+        .filter((value) => value && String(value).trim())
+        .map((value) => `<span class="chip">${escapeHtml(value)}</span>`)
+        .join("");
+    }
+
+    function renderWine(slug) {
+      const wine = catalog.find((item) => item.slug === slug);
+      panelCatalog.hidden = true;
+      panelRecognize.hidden = true;
+      tabs.hidden = true;
+      panelWine.hidden = false;
+      document.body.classList.remove("is-chat");
+      document.body.classList.add("is-wine");
+      if (!wine) {
+        winePage.innerHTML = `<div class="empty"><h2>Такого вина нет</h2><p>${escapeHtml(slug || "")}</p></div>`;
+        return;
+      }
+      const photo = stageHtml(wine);
+      const place = [wine.region, wine.winery].filter(Boolean).join(" · ");
+      winePage.innerHTML = `
+        <div class="wine-layout">
+          ${photo}
+          <div class="wine-copy">
+            <h2>${escapeHtml(wine.name || "Без названия")}</h2>
+            <p class="place">${escapeHtml(place)}</p>
+            <div class="chip-row">${chipHtml(wine)}</div>
+            <ul class="facts">
+              ${factLine("Регион", wine.region)}
+              ${factLine("Винодельня", wine.winery)}
+              ${factLine("Сорт", wine.grape)}
+              ${factLine("Цвет", wine.color)}
+              ${factLine("Категория", wine.category)}
+              ${factLine("Вкус", wine.taste)}
+              ${factLine("Сахар", wine.sugar)}
+              ${factLine("К еде", wine.food)}
+            </ul>
+            ${wine.description ? `<p class="full-desc">${escapeHtml(wine.description)}</p>` : ""}
+          </div>
+        </div>
+      `;
+      revealPhotos(winePage);
+    }
+
+    function openWine(slug) {
+      if (!slug) return;
+      returnTab = currentTab;
+      returnQuery = searchInput.value;
+      const next = "/wine/" + encodeURIComponent(slug);
+      if (location.pathname !== next) {
+        history.pushState({ view: "wine", slug, tab: returnTab, q: returnQuery }, "", next);
+      }
+      renderWine(slug);
+    }
+
+    function restoreList() {
+      const state = history.state || {};
+      const tab = state.tab || returnTab || "catalog";
+      const query = typeof state.q === "string" ? state.q : returnQuery;
+      searchInput.value = query;
+      renderCatalog();
+      showTab(tab);
+    }
+
+    function closeWine() {
+      searchInput.value = returnQuery;
+      renderCatalog();
+      history.pushState({ tab: returnTab, q: returnQuery }, "", "/");
+      showTab(returnTab);
+    }
+
+    let filterTimer = 0;
+    let searchPrevLen = 0;
+
+    function searchHay(wine) {
+      return [wine.name, wine.winery, wine.grape].join(" ").toLocaleLowerCase("ru");
+    }
+
+    function buildCatalogCards() {
+      grid.innerHTML = catalog.map((wine) => {
+        const hay = escapeHtml(searchHay(wine));
+        return wineCardHtml(wine).replace("<button ", `<button data-hay="${hay}" `);
+      }).join("");
+      revealPhotos(grid);
+    }
+
+    function applyCatalogFilter() {
+      if (grid.childElementCount !== catalog.length) buildCatalogCards();
+      const needle = searchInput.value.trim().toLocaleLowerCase("ru");
+      let shown = 0;
+      const cards = grid.children;
+      for (let i = 0; i < cards.length; i++) {
+        const card = cards[i];
+        const ok = !needle || (card.getAttribute("data-hay") || "").includes(needle);
+        card.hidden = !ok;
+        if (ok) shown += 1;
+      }
+      countEl.textContent = catalog.length ? (shown + " из " + catalog.length) : "";
+      emptyEl.hidden = shown !== 0 || catalog.length === 0;
+      searchClear.hidden = searchInput.value.length === 0;
+    }
+
+    function renderCatalog() {
+      window.clearTimeout(filterTimer);
+      searchPrevLen = searchInput.value.length;
+      applyCatalogFilter();
+    }
+
+    function syncSearchClear() {
+      searchClear.hidden = searchInput.value.length === 0;
+    }
+
+    function scheduleCatalogFilter() {
+      const now = searchInput.value.length;
+      const deleting = now < searchPrevLen;
+      searchPrevLen = now;
+      syncSearchClear();
+      window.clearTimeout(filterTimer);
+      if (deleting) {
+        applyCatalogFilter();
+        return;
+      }
+      filterTimer = window.setTimeout(applyCatalogFilter, 150);
+    }
+
+    document.body.addEventListener("click", (event) => {
+      const card = event.target.closest(".wine-card");
+      if (!card || !card.dataset.slug) return;
+      openWine(card.dataset.slug);
+    });
+
+    wineBack.addEventListener("click", closeWine);
+
+    window.addEventListener("popstate", () => {
+      const match = location.pathname.match(/^\/wine\/([^/]+)\/?$/);
+      if (match) {
+        renderWine(decodeURIComponent(match[1]));
+        return;
+      }
+      restoreList();
+    });
+
+    searchInput.addEventListener("input", scheduleCatalogFilter);
+    searchInput.addEventListener("keydown", (event) => {
+      if (event.key !== "Escape" || !searchInput.value) return;
+      event.preventDefault();
+      searchInput.value = "";
+      searchPrevLen = 0;
+      window.clearTimeout(filterTimer);
+      applyCatalogFilter();
+    });
+    searchClear.addEventListener("mousedown", (event) => {
+      event.preventDefault();
+    });
+    searchClear.addEventListener("click", () => {
+      searchInput.value = "";
+      searchPrevLen = 0;
+      window.clearTimeout(filterTimer);
+      applyCatalogFilter();
+      searchInput.focus();
+    });
+
+    async function loadCatalog() {
+      try {
+        const response = await fetch("/catalog");
+        if (!response.ok) throw new Error("Каталог не загрузился");
+        const body = await response.json();
+        catalog = Array.isArray(body.wines) ? body.wines : [];
+        catalogError.hidden = true;
+        const match = location.pathname.match(/^\/wine\/([^/]+)\/?$/);
+        if (match) {
+          // Open the wine page first so its photo is not stuck behind ~2k catalog fetches.
+          countEl.textContent = catalog.length ? ("0 из " + catalog.length) : "";
+          renderWine(decodeURIComponent(match[1]));
+          window.setTimeout(() => {
+            if (grid.childElementCount !== catalog.length) buildCatalogCards();
+            applyCatalogFilter();
+          }, 0);
+        } else {
+          renderCatalog();
+        }
+      } catch (err) {
+        countEl.textContent = "";
+        catalogError.textContent = err.message || String(err);
+        catalogError.hidden = false;
+      }
+    }
+
+    loadCatalog();
+    showTab("catalog");
+
+    function useTouchCapture() {
+      const narrow = window.matchMedia("(max-width: 840px)").matches;
+      const coarse = window.matchMedia("(pointer: coarse)").matches;
+      const ua = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+      return Boolean(narrow || coarse || ua);
+    }
+
+    function applyMode() {
+      const touch = useTouchCapture();
+      document.body.classList.toggle("force-touch", touch);
+      document.body.classList.toggle("force-desk", !touch);
+    }
+
+    applyMode();
+    window.addEventListener("resize", applyMode);
+
+    function scrollThread(smooth) {
+      const top = thread.scrollHeight;
+      if (smooth) thread.scrollTo({ top, behavior: "smooth" });
+      else thread.scrollTop = top;
+    }
+
+    function pinThread(root, smooth) {
+      scrollThread(smooth);
+      requestAnimationFrame(() => scrollThread(smooth));
+      if (!root) return;
+      root.querySelectorAll("img").forEach((img) => {
+        if (img.complete) return;
+        const again = () => scrollThread(true);
+        img.addEventListener("load", again, { once: true });
+        img.addEventListener("error", again, { once: true });
+      });
+    }
+
+    function appendUserPhoto(file) {
+      const url = URL.createObjectURL(file);
+      const row = document.createElement("div");
+      row.className = "msg msg-user";
+      const bubble = document.createElement("div");
+      bubble.className = "bubble bubble-user";
+      const img = document.createElement("img");
+      img.className = "bubble-photo";
+      img.alt = "Фото этикетки";
+      img.src = url;
+      bubble.appendChild(img);
+      row.appendChild(bubble);
+      thread.appendChild(row);
+      pinThread(row, true);
+    }
+
+    function appendUserText(text) {
+      const row = document.createElement("div");
+      row.className = "msg msg-user";
+      row.innerHTML = `<div class="bubble bubble-user bubble-text"><p>${escapeHtml(text)}</p></div>`;
+      thread.appendChild(row);
+      pinThread(row, true);
+    }
+
+    function appendBotPending(label) {
+      const row = document.createElement("div");
+      row.className = "msg msg-bot";
+      const pending = label || "Смотрим этикетку…";
+      row.innerHTML = `<p class="who">Вина</p><div class="bubble bubble-bot"><p class="pending">${escapeHtml(pending)}</p></div>`;
+      thread.appendChild(row);
+      pinThread(row, true);
+      return row;
+    }
+
+    function foundHtml(data) {
+      return wineCardHtml(data, { compact: true });
+    }
+
+    function similarCardHtml(item, closest) {
+      return wineCardHtml(item, {
+        compact: true,
+        closest: Boolean(closest),
+        extra: item.reason ? `<p class="reason">${escapeHtml(item.reason)}</p>` : "",
+      });
+    }
+
+    function missingHtml(data) {
+      const note = String((data && data.message) || "").trim();
+      const items = Array.isArray(data && data.similar) ? data.similar : [];
+      if (!items.length) {
+        return `<p class="miss-note">${escapeHtml(note || "Этого вина в каталоге нет.")}</p>`;
+      }
+      const best = similarCardHtml(items[0], true);
+      const rest = items.slice(1).map((item) => similarCardHtml(item, false)).join("");
+      const lead = note ? `<p class="miss-note">${escapeHtml(note)}</p>` : "";
+      const more = rest
+        ? `<p class="similar-more">Ещё варианты</p><div class="similar">${rest}</div>`
+        : "";
+      return `${lead}<p class="miss-lead">Не уверены, но это самое похожее вино.</p><div class="similar-best">${best}</div>${more}`;
+    }
+
+    function logTrace(trace) {
+      if (!trace) return;
+      const lex = trace.lexicon || {};
+      const search = trace.search || {};
+      const neural = trace.neural || {};
+      const winner = trace.winner || {};
+      console.group("Распознавание");
+      console.log("OCR", trace.ocr || "");
+      console.log("После словаря", {
+        normalized: lex.ocr_normalized || "",
+        kept: lex.kept || [],
+        dropped: lex.dropped || [],
+      });
+      console.log("Поиск", {
+        query: search.query || "",
+        where: search.where || "",
+        reason: search.reason || "",
+        result: search.result || null,
+      });
+      console.log("На вход нейросети", neural);
+      console.log("Ближайшие");
+      console.table(trace.neighbors || []);
+      console.log("Итог", winner.slug || "", winner.name || "", winner.status || "");
+      console.groupEnd();
+    }
+
+    function fillBot(node, data) {
+      const bubble = node.querySelector(".bubble");
+      const found = data && data.status === "found" && Boolean(data.slug && data.name);
+      bubble.innerHTML = found ? foundHtml(data) : missingHtml(data);
+      revealPhotos(bubble);
+      pinThread(node, true);
+    }
+
+    function recommendCard(item, closest) {
+      const snippet = String((item && item.description) || "").trim();
+      return wineCardHtml(item, {
+        compact: true,
+        closest: Boolean(closest),
+        badge: "Самое близкое",
+        extra: snippet ? `<p class="wine-snippet">${escapeHtml(snippet)}</p>` : "",
+      });
+    }
+
+    function recommendHtml(data) {
+      const items = Array.isArray(data && data.wines) ? data.wines.slice(0, 4) : [];
+      if (!items.length) {
+        return `<p>В каталоге не нашлось близкого вина.</p>`;
+      }
+      const best = recommendCard(items[0], true);
+      const rest = items.slice(1).map((item) => recommendCard(item, false)).join("");
+      const more = rest
+        ? `<p class="similar-more">Ещё варианты</p><div class="similar">${rest}</div>`
+        : "";
+      return `<p class="miss-lead">Подобрала по описанию</p><div class="similar-best">${best}</div>${more}`;
+    }
+
+    function fillRecommend(node, data) {
+      const bubble = node.querySelector(".bubble");
+      bubble.innerHTML = recommendHtml(data);
+      revealPhotos(bubble);
+      pinThread(node, true);
+    }
+
+    function fillError(node, message) {
+      const bubble = node.querySelector(".bubble");
+      bubble.innerHTML = `<p class="err">${escapeHtml(message || "Не получилось распознать")}</p>`;
+      pinThread(node, true);
+    }
+
+    async function postRecognize(file) {
+      const form = new FormData();
+      form.append("file", file, file.name || "label.jpg");
+      const response = await fetch("/recognize?trace=1", { method: "POST", body: form });
+      const text = await response.text();
+      let body;
+      try { body = JSON.parse(text); } catch { body = null; }
+      if (!response.ok || !body) {
+        throw new Error("Не получилось распознать");
+      }
+      return body;
+    }
+
+    async function postRecommend(text) {
+      const response = await fetch("/recommend", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text }),
+      });
+      const raw = await response.text();
+      let body = null;
+      try { body = JSON.parse(raw); } catch { body = null; }
+      if (!response.ok) {
+        const detail = body && body.detail;
+        const message = typeof detail === "string" ? detail : "Не получилось подобрать";
+        throw new Error(message);
+      }
+      return body;
+    }
+
+    function enqueue(file) {
+      if (!file || !String(file.type || "").startsWith("image/")) return;
+      appendUserPhoto(file);
+      const bot = appendBotPending();
+      jobs.push({ kind: "photo", file, bot });
+      pump();
+    }
+
+    function enqueueText(raw) {
+      const text = String(raw || "").trim();
+      if (!text) return;
+      askInput.value = "";
+      appendUserText(text);
+      const bot = appendBotPending("Подбираю…");
+      jobs.push({ kind: "text", text, bot });
+      pump();
+    }
+
+    async function pump() {
+      if (busy || !jobs.length) return;
+      busy = true;
+      const job = jobs.shift();
+      try {
+        if (job.kind === "text") {
+          const body = await postRecommend(job.text);
+          fillRecommend(job.bot, body);
+        } else {
+          const body = await postRecognize(job.file);
+          logTrace(body && body.trace);
+          fillBot(job.bot, body);
+        }
+      } catch (err) {
+        const fallback = job.kind === "text" ? "Не получилось подобрать" : "Не получилось распознать";
+        fillError(job.bot, (err && err.message) || fallback);
+      } finally {
+        busy = false;
+        pump();
+      }
+    }
+
+    askForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      enqueueText(askInput.value);
+    });
+
+    cameraInput.addEventListener("change", () => {
+      const file = cameraInput.files && cameraInput.files[0];
+      if (file) enqueue(file);
+      cameraInput.value = "";
+    });
+    galleryInput.addEventListener("change", () => {
+      const file = galleryInput.files && galleryInput.files[0];
+      if (file) enqueue(file);
+      galleryInput.value = "";
+    });
+    fileInput.addEventListener("change", () => {
+      const file = fileInput.files && fileInput.files[0];
+      if (file) enqueue(file);
+      fileInput.value = "";
+    });
+
+    composer.addEventListener("dragover", (event) => {
+      event.preventDefault();
+      composer.classList.add("is-drag");
+    });
+    composer.addEventListener("dragleave", (event) => {
+      if (event.relatedTarget && composer.contains(event.relatedTarget)) return;
+      composer.classList.remove("is-drag");
+    });
+    composer.addEventListener("drop", (event) => {
+      event.preventDefault();
+      composer.classList.remove("is-drag");
+      const file = event.dataTransfer && event.dataTransfer.files && event.dataTransfer.files[0];
+      if (file) enqueue(file);
+    });
+  </script>
+</body>
+</html>
