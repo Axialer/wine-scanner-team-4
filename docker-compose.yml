@@ -1,0 +1,8 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8092:8092"
+    volumes:
+      - ./data:/app/data
+      - ./index:/app/index
