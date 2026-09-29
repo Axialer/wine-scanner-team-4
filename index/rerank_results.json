@@ -1,0 +1,66 @@
+{
+  "model": "google/siglip2-base-patch16-224",
+  "device": "cpu",
+  "test_size": 100,
+  "top_k": 20,
+  "baseline_normalized": {
+    "top1": 0.89,
+    "top5": 0.99,
+    "mrr": 0.938409090909091
+  },
+  "grid": [
+    {
+      "text_weight": 0.05,
+      "visual_weight": 0.95,
+      "top1": 0.9,
+      "top5": 0.99,
+      "mrr": 0.94375
+    },
+    {
+      "text_weight": 0.1,
+      "visual_weight": 0.9,
+      "top1": 0.9,
+      "top5": 0.99,
+      "mrr": 0.9441666666666666
+    },
+    {
+      "text_weight": 0.15,
+      "visual_weight": 0.85,
+      "top1": 0.87,
+      "top5": 0.99,
+      "mrr": 0.9275
+    },
+    {
+      "text_weight": 0.2,
+      "visual_weight": 0.8,
+      "top1": 0.87,
+      "top5": 0.99,
+      "mrr": 0.9275
+    },
+    {
+      "text_weight": 0.25,
+      "visual_weight": 0.75,
+      "top1": 0.85,
+      "top5": 0.99,
+      "mrr": 0.9111666666666666
+    },
+    {
+      "text_weight": 0.3,
+      "visual_weight": 0.7,
+      "top1": 0.83,
+      "top5": 0.96,
+      "mrr": 0.8934285714285715
+    },
+    {
+      "text_weight": 0.4,
+      "visual_weight": 0.6,
+      "top1": 0.76,
+      "top5": 0.94,
+      "mrr": 0.8465589133089133
+    }
+  ],
+  "timing": {
+    "siglip_seconds": 21.878403899958357,
+    "ocr_search_seconds": 323.03890189994127
+  }
+}

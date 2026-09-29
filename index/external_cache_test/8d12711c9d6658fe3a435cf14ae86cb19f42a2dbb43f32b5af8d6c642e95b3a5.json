@@ -1,0 +1,15 @@
+{
+  "query": "шато белое совиньон блан кэш",
+  "name": "Шато Белое",
+  "grape": "Совиньон",
+  "color": "белое",
+  "taste": "сухое",
+  "sweetness": "dry",
+  "region": "",
+  "winery": "",
+  "source": "https://example.test/wine",
+  "text": "Шато Белое Белое сухое Совиньон Блан",
+  "status": "found",
+  "from_cache": false,
+  "cached_at": 1790259275.595168
+}

@@ -1,0 +1,3112 @@
+{
+  "model": "google/siglip2-base-patch16-224",
+  "device": "cpu",
+  "mode": "augmented",
+  "test_size": 100,
+  "top1_accuracy": 0.84,
+  "top5_accuracy": 0.99,
+  "mrr": 0.9053333333333333,
+  "top1_errors": 16,
+  "results": [
+    {
+      "true_slug": "shato-pino-grand-reserve-cabernet-franc-kaberne-fran-krasnoe-suhoe-135",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1309,
+          "score": 0.8087789416313171,
+          "slug": "shato-pino-grand-reserve-cabernet-franc-kaberne-fran-krasnoe-suhoe-135"
+        },
+        {
+          "index": 1310,
+          "score": 0.7537596225738525,
+          "slug": "shato-pino-grand-reserve-cabernet-sauvignon-kaberne-sovinon-krasnoe-suhoe-135"
+        },
+        {
+          "index": 1311,
+          "score": 0.7432277202606201,
+          "slug": "shato-pino-grand-reserve-chardonnay-shardone-beloe-suhoe-125"
+        },
+        {
+          "index": 1312,
+          "score": 0.7359226942062378,
+          "slug": "shato-pino-grand-reserve-pinot-noir-pino-nuar-krasnoe-suhoe-135"
+        },
+        {
+          "index": 1303,
+          "score": 0.6958880424499512,
+          "slug": "shato-pino-blan-de-blan-shardone-beloe-ekstra-bryut-12"
+        }
+      ]
+    },
+    {
+      "true_slug": "belbek-belbek-muskat-beloe-suhoe-128",
+      "rank": 2,
+      "top_results": [
+        {
+          "index": 244,
+          "score": 0.890304684638977,
+          "slug": "belbek-muskat-muskat-belyy-beloe-suhoe-127"
+        },
+        {
+          "index": 228,
+          "score": 0.8784902095794678,
+          "slug": "belbek-belbek-muskat-beloe-suhoe-128"
+        },
+        {
+          "index": 225,
+          "score": 0.8171762228012085,
+          "slug": "belbek-belbek-kaberne-fran-krasnoe-suhoe-13"
+        },
+        {
+          "index": 239,
+          "score": 0.8150666952133179,
+          "slug": "belbek-kaberne-fran-krasnoe-suhoe-134"
+        },
+        {
+          "index": 259,
+          "score": 0.8034262657165527,
+          "slug": "belbek-sira-rezerv-krasnoe-suhoe-132"
+        }
+      ]
+    },
+    {
+      "true_slug": "abrau-dyurso-victor-dravigny-polusladkoe-sovinon-blan-beloe-12",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 51,
+          "score": 0.9407603740692139,
+          "slug": "abrau-dyurso-victor-dravigny-polusladkoe-sovinon-blan-beloe-12"
+        },
+        {
+          "index": 52,
+          "score": 0.9241960644721985,
+          "slug": "abrau-dyurso-victor-dravigny-polusuhoe-pino-blan-beloe-12"
+        },
+        {
+          "index": 37,
+          "score": 0.8898874521255493,
+          "slug": "abrau-dyurso-russkoe-igristoe-koshernoe-bryut-shardone-beloe-13"
+        },
+        {
+          "index": 41,
+          "score": 0.8858432769775391,
+          "slug": "abrau-dyurso-russkoe-igristoe-polusuhoe-shardone-beloe-12"
+        },
+        {
+          "index": 38,
+          "score": 0.881850004196167,
+          "slug": "abrau-dyurso-russkoe-igristoe-koshernoe-polusladkoe-shardone-beloe-12"
+        }
+      ]
+    },
+    {
+      "true_slug": "usadba-markoth-kyuve-blan-shardone-beloe-suhoe-12",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1518,
+          "score": 0.9193254709243774,
+          "slug": "usadba-markoth-kyuve-blan-shardone-beloe-suhoe-12"
+        },
+        {
+          "index": 1520,
+          "score": 0.8180376291275024,
+          "slug": "usadba-markoth-shardone-beloe-suhoe-12"
+        },
+        {
+          "index": 1875,
+          "score": 0.8112099766731262,
+          "slug": "vinodelnya-uzunov-rash-risling-beloe-suhoe-127"
+        },
+        {
+          "index": 1478,
+          "score": 0.8079043030738831,
+          "slug": "tempelhof-winery-risling-risling-reynskiy-beloe-suhoe-115"
+        },
+        {
+          "index": 1501,
+          "score": 0.8042831420898438,
+          "slug": "usadba-divnomorskoe-east-hill-vione-beloe-suhoe-127"
+        }
+      ]
+    },
+    {
+      "true_slug": "esse-blanc-de-noirs-pino-nuar-beloe-ekstra-bryut-115",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 563,
+          "score": 0.9053332805633545,
+          "slug": "esse-blanc-de-noirs-pino-nuar-beloe-ekstra-bryut-115"
+        },
+        {
+          "index": 568,
+          "score": 0.8998052477836609,
+          "slug": "esse-demi-sec-muscat-nectar-muskat-belyy-beloe-ekstra-bryut-115"
+        },
+        {
+          "index": 585,
+          "score": 0.8998052477836609,
+          "slug": "esse-muskat-muskat-belyy-beloe-ekstra-bryut-115"
+        },
+        {
+          "index": 603,
+          "score": 0.8997921943664551,
+          "slug": "esse-rose-cuvee-prestige-pino-nuar-rozovoe-bryut-115"
+        },
+        {
+          "index": 565,
+          "score": 0.8888112306594849,
+          "slug": "esse-brut-zero-dosage-shardone-beloe-ekstra-bryut-12"
+        }
+      ]
+    },
+    {
+      "true_slug": "derbent-vino-kavkazian-saperavi-krasnoe-suhoe-105-125",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 501,
+          "score": 0.8787882328033447,
+          "slug": "derbent-vino-kavkazian-saperavi-krasnoe-suhoe-105-125"
+        },
+        {
+          "index": 497,
+          "score": 0.8331989645957947,
+          "slug": "derbent-vino-kavkazian-dzharauli-moldova-krasnoe-polusladkoe-11"
+        },
+        {
+          "index": 325,
+          "score": 0.7998171448707581,
+          "slug": "caucasian-dzharag"
+        },
+        {
+          "index": 499,
+          "score": 0.7926015257835388,
+          "slug": "derbent-vino-kavkazian-rkatsiteli-beloe-bryut-105-125"
+        },
+        {
+          "index": 500,
+          "score": 0.7779103517532349,
+          "slug": "derbent-vino-kavkazian-rkatsiteli-beloe-suhoe-12"
+        }
+      ]
+    },
+    {
+      "true_slug": "denisov_pet_nat_rubin",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 457,
+          "score": 0.8261575698852539,
+          "slug": "denisov_pet_nat_rubin"
+        },
+        {
+          "index": 444,
+          "score": 0.767194926738739,
+          "slug": "denisov-winery-petnat-saperavi-severnyy-rozovoe-ekstra-bryut-105"
+        },
+        {
+          "index": 443,
+          "score": 0.7360273599624634,
+          "slug": "denisov-winery-petnat-rkatsiteli-beloe-ekstra-bryut-107"
+        },
+        {
+          "index": 728,
+          "score": 0.732246994972229,
+          "slug": "fioletovyj-rannij-petnat"
+        },
+        {
+          "index": 442,
+          "score": 0.7317305207252502,
+          "slug": "denisov-winery-petnat-risling-beloe-ekstra-bryut-10"
+        }
+      ]
+    },
+    {
+      "true_slug": "blagolyubov-muskat-ottonel-beloe-suhoe-125",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 285,
+          "score": 0.9236621856689453,
+          "slug": "blagolyubov-muskat-ottonel-beloe-suhoe-125"
+        },
+        {
+          "index": 287,
+          "score": 0.8442267179489136,
+          "slug": "blagolyubov-sovinon-blan-beloe-suhoe-125"
+        },
+        {
+          "index": 286,
+          "score": 0.8095169067382812,
+          "slug": "blagolyubov-sibirkovyy-beloe-suhoe-115"
+        },
+        {
+          "index": 288,
+          "score": 0.7984769344329834,
+          "slug": "blagolyubov-stanichnoe-stanichnyy-beloe-suhoe-12"
+        },
+        {
+          "index": 1034,
+          "score": 0.7754807472229004,
+          "slug": "massandra-muskatel-belyy-belye-sorta-vinograda-beloe-sladkoe-16"
+        }
+      ]
+    },
+    {
+      "true_slug": "usadba-divnomorskoe-merlot-merlo-krasnoe-suhoe-149",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1508,
+          "score": 0.9284380674362183,
+          "slug": "usadba-divnomorskoe-merlot-merlo-krasnoe-suhoe-149"
+        },
+        {
+          "index": 1047,
+          "score": 0.8414621353149414,
+          "slug": "merlo"
+        },
+        {
+          "index": 1519,
+          "score": 0.8412203788757324,
+          "slug": "usadba-markoth-merlo-rezerv-krasnoe-suhoe-13"
+        },
+        {
+          "index": 1516,
+          "score": 0.8346012234687805,
+          "slug": "usadba-divnomorskoe-yuzhnyy-les-merlo-krasnoe-suhoe-137"
+        },
+        {
+          "index": 1510,
+          "score": 0.8313409090042114,
+          "slug": "usadba-divnomorskoe-pinot-noir-pino-nuar-krasnoe-suhoe-12"
+        }
+      ]
+    },
+    {
+      "true_slug": "bakla-vines-kangun-beloe-suhoe-12",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 209,
+          "score": 0.8882544040679932,
+          "slug": "bakla-vines-kangun-beloe-suhoe-12"
+        },
+        {
+          "index": 211,
+          "score": 0.8353623747825623,
+          "slug": "bakla-vines-kangun-ps-beloe-suhoe-128"
+        },
+        {
+          "index": 272,
+          "score": 0.7938069105148315,
+          "slug": "belmas-winery-riesling-katya-belmas-risling-beloe-suhoe-125"
+        },
+        {
+          "index": 276,
+          "score": 0.7845555543899536,
+          "slug": "belmas-winery-sauvignon-blanc-katya-belmas-sovinon-blan-beloe-suhoe-115"
+        },
+        {
+          "index": 277,
+          "score": 0.7728283405303955,
+          "slug": "belmas-winery-sauvignon-blanc-katya-sovinon-blan-beloe-suhoe-115"
+        }
+      ]
+    },
+    {
+      "true_slug": "sober-bash-dve-doliny-liuri-2023-dostoynyy-rozovoe-suhoe-13",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1385,
+          "score": 0.8946219086647034,
+          "slug": "sober-bash-dve-doliny-liuri-2023-dostoynyy-rozovoe-suhoe-13"
+        },
+        {
+          "index": 1383,
+          "score": 0.8400027751922607,
+          "slug": "sober-bash-dve-doliny-auri-mtsvane-kahetinskiy-beloe-suhoe-125"
+        },
+        {
+          "index": 1384,
+          "score": 0.806268572807312,
+          "slug": "sober-bash-dve-doliny-kaberne-fran-2023-krasnoe-polusuhoe-14"
+        },
+        {
+          "index": 1386,
+          "score": 0.7997131943702698,
+          "slug": "sober-bash-dve-doliny-myuller-turgau-2023-beloe-suhoe-117"
+        },
+        {
+          "index": 1388,
+          "score": 0.7904293537139893,
+          "slug": "sober-bash-dve-doliny-tsimlyanskiy-2023-tsimlyanskiy-chernyy-krasnoe-suhoe-13"
+        }
+      ]
+    },
+    {
+      "true_slug": "usadba-divnomorskoe-yuzhnyy-les-merlo-krasnoe-suhoe-137",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1516,
+          "score": 0.9360910058021545,
+          "slug": "usadba-divnomorskoe-yuzhnyy-les-merlo-krasnoe-suhoe-137"
+        },
+        {
+          "index": 963,
+          "score": 0.8652199506759644,
+          "slug": "leto-kollekcziya-vinodela-2020-suhoe-krasnoe"
+        },
+        {
+          "index": 1513,
+          "score": 0.860643208026886,
+          "slug": "usadba-divnomorskoe-solist-marselan-rozovoe-suhoe-115"
+        },
+        {
+          "index": 813,
+          "score": 0.8605824708938599,
+          "slug": "imenie-sikory-semeynoe-nasledie-kaberne-sovinon-krasnoe-suhoe-14"
+        },
+        {
+          "index": 956,
+          "score": 0.8572589159011841,
+          "slug": "leto-kaberne-fran-rezerv-2020-suhoe-krasnoe"
+        }
+      ]
+    },
+    {
+      "true_slug": "vinodelnya-myshako-sovinon-blan-mode-cold-style-beloe-suhoe-122",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1827,
+          "score": 0.8821263313293457,
+          "slug": "vinodelnya-myshako-sovinon-blan-mode-cold-style-beloe-suhoe-122"
+        },
+        {
+          "index": 1769,
+          "score": 0.7977603077888489,
+          "slug": "vinodelnya-myshako-marselan-mode-appassimento-krasnoe-suhoe-146"
+        },
+        {
+          "index": 1807,
+          "score": 0.7900494337081909,
+          "slug": "vinodelnya-myshako-risling-mode-kabinett-beloe-polusuhoe-126"
+        },
+        {
+          "index": 1770,
+          "score": 0.7891948223114014,
+          "slug": "vinodelnya-myshako-marselan-mode-krasnoe-suhoe-145"
+        },
+        {
+          "index": 1828,
+          "score": 0.7869904637336731,
+          "slug": "vinodelnya-myshako-sovinon-blan-mode-petnat-beloe-bryut-12"
+        }
+      ]
+    },
+    {
+      "true_slug": "novyy-svet-dom-shampanskih-vin-novyy-svet-pino-nuar-rozovoe-bryut-13",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1116,
+          "score": 0.868333637714386,
+          "slug": "novyy-svet-dom-shampanskih-vin-novyy-svet-pino-nuar-rozovoe-bryut-13"
+        },
+        {
+          "index": 1118,
+          "score": 0.8376301527023315,
+          "slug": "novyy-svet-dom-shampanskih-vin-pino-nuar-polusuhoe-rozovoe-135"
+        },
+        {
+          "index": 1114,
+          "score": 0.7786080837249756,
+          "slug": "novyy-svet-dom-shampanskih-vin-novyy-svet-kokur-kokur-belyy-beloe-ekstra-bryut-12"
+        },
+        {
+          "index": 1115,
+          "score": 0.7698790431022644,
+          "slug": "novyy-svet-dom-shampanskih-vin-novyy-svet-kyuve-ekstra-bryut-shardone-beloe-135"
+        },
+        {
+          "index": 1117,
+          "score": 0.7634921669960022,
+          "slug": "novyy-svet-dom-shampanskih-vin-novyy-svet-polusladkoe-roze-shardone-rozovoe-115"
+        }
+      ]
+    },
+    {
+      "true_slug": "aristov-kyuve-aleksandr-roze-de-pino",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 178,
+          "score": 0.8770396709442139,
+          "slug": "aristov-kyuve-aleksandr-roze-de-pino"
+        },
+        {
+          "index": 177,
+          "score": 0.838921308517456,
+          "slug": "aristov-kyuve-aleksandr-blan-de-nuar"
+        },
+        {
+          "index": 176,
+          "score": 0.8234357833862305,
+          "slug": "aristov-kyuve-aleksandr-blan-de-blan"
+        },
+        {
+          "index": 13,
+          "score": 0.731477677822113,
+          "slug": "abrau-dyurso-aleksandr-ii-magnum-shardone-beloe-bryut-125"
+        },
+        {
+          "index": 74,
+          "score": 0.7233631610870361,
+          "slug": "agora-winery-cuvee-pino-gridzhio-shardone-bryut-beloe-125"
+        }
+      ]
+    },
+    {
+      "true_slug": "pomeste-golubitskoe-noble-selection-pino-nuar-roze-rozovoe-suhoe-132",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1209,
+          "score": 0.8810992240905762,
+          "slug": "pomeste-golubitskoe-noble-selection-pino-nuar-roze-rozovoe-suhoe-132"
+        },
+        {
+          "index": 763,
+          "score": 0.7252951860427856,
+          "slug": "golubitskoe-estate-winery-series-pino-nuar-rozovoe-suhoe-115"
+        },
+        {
+          "index": 1555,
+          "score": 0.7220532894134521,
+          "slug": "usadba-rodnoe-gnezdo-4-elements-sira-roze-rozovoe-polusuhoe-135"
+        },
+        {
+          "index": 1513,
+          "score": 0.720454216003418,
+          "slug": "usadba-divnomorskoe-solist-marselan-rozovoe-suhoe-115"
+        },
+        {
+          "index": 765,
+          "score": 0.7178690433502197,
+          "slug": "golubitskoe-estate-winery-series-roze-blend-kaberne-sovinon-rozovoe-suhoe-117"
+        }
+      ]
+    },
+    {
+      "true_slug": "katharon-mezenka-risling-suhoe",
+      "rank": 2,
+      "top_results": [
+        {
+          "index": 863,
+          "score": 0.8466637134552002,
+          "slug": "katharon-mezenka-risling-polusuhoe"
+        },
+        {
+          "index": 864,
+          "score": 0.8452619314193726,
+          "slug": "katharon-mezenka-risling-suhoe"
+        },
+        {
+          "index": 866,
+          "score": 0.84481281042099,
+          "slug": "katharon-mezenka-sovinon-blan"
+        },
+        {
+          "index": 862,
+          "score": 0.8073557615280151,
+          "slug": "katharon-mezenka-merlo"
+        },
+        {
+          "index": 865,
+          "score": 0.8065551519393921,
+          "slug": "katharon-mezenka-sira"
+        }
+      ]
+    },
+    {
+      "true_slug": "agora-rosa-viva-riesling",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 65,
+          "score": 0.8884599208831787,
+          "slug": "agora-rosa-viva-riesling"
+        },
+        {
+          "index": 60,
+          "score": 0.8184435963630676,
+          "slug": "agora-rosa-viva-beloe-bryut"
+        },
+        {
+          "index": 61,
+          "score": 0.7935925722122192,
+          "slug": "agora-rosa-viva-beloe-polusladkoe"
+        },
+        {
+          "index": 64,
+          "score": 0.7820757627487183,
+          "slug": "agora-rosa-viva-muscat"
+        },
+        {
+          "index": 66,
+          "score": 0.7753489017486572,
+          "slug": "agora-rosa-viva-rozovoe-polusladkoe"
+        }
+      ]
+    },
+    {
+      "true_slug": "agora-rosa-viva-beloe-polusladkoe",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 61,
+          "score": 0.9267434477806091,
+          "slug": "agora-rosa-viva-beloe-polusladkoe"
+        },
+        {
+          "index": 66,
+          "score": 0.9110455513000488,
+          "slug": "agora-rosa-viva-rozovoe-polusladkoe"
+        },
+        {
+          "index": 60,
+          "score": 0.8970730304718018,
+          "slug": "agora-rosa-viva-beloe-bryut"
+        },
+        {
+          "index": 65,
+          "score": 0.8479949831962585,
+          "slug": "agora-rosa-viva-riesling"
+        },
+        {
+          "index": 63,
+          "score": 0.7999265789985657,
+          "slug": "agora-rosa-viva-cabernet-sauvignon-shiraz"
+        }
+      ]
+    },
+    {
+      "true_slug": "aya-organic-wine-vineyards-evolution-chardonnay-shardone-beloe-suhoe-124",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 191,
+          "score": 0.9114570617675781,
+          "slug": "aya-organic-wine-vineyards-evolution-chardonnay-shardone-beloe-suhoe-124"
+        },
+        {
+          "index": 618,
+          "score": 0.8745682239532471,
+          "slug": "evolution-pinot-noir"
+        },
+        {
+          "index": 617,
+          "score": 0.8456800580024719,
+          "slug": "evolution-pinot-noir-bryut-rozovoe"
+        },
+        {
+          "index": 1512,
+          "score": 0.8408411741256714,
+          "slug": "usadba-divnomorskoe-rose-vione-rozovoe-suhoe-125"
+        },
+        {
+          "index": 1555,
+          "score": 0.8331177234649658,
+          "slug": "usadba-rodnoe-gnezdo-4-elements-sira-roze-rozovoe-polusuhoe-135"
+        }
+      ]
+    },
+    {
+      "true_slug": "denisov-winery-pino-nuar-shardone-ekstra-bryut-beloe-125",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 447,
+          "score": 0.8742111921310425,
+          "slug": "denisov-winery-pino-nuar-shardone-ekstra-bryut-beloe-125"
+        },
+        {
+          "index": 454,
+          "score": 0.8156161308288574,
+          "slug": "denisov_pazori_risling"
+        },
+        {
+          "index": 184,
+          "score": 0.7657169699668884,
+          "slug": "avtorskij-gid-artura-sarkisyana"
+        },
+        {
+          "index": 565,
+          "score": 0.7520317435264587,
+          "slug": "esse-brut-zero-dosage-shardone-beloe-ekstra-bryut-12"
+        },
+        {
+          "index": 1476,
+          "score": 0.7518298625946045,
+          "slug": "temelion-bryut-roze"
+        }
+      ]
+    },
+    {
+      "true_slug": "derbent-vino-di-kaspiko-rkatsiteli-beloe-suhoe-12",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 476,
+          "score": 0.934482216835022,
+          "slug": "derbent-vino-di-kaspiko-rkatsiteli-beloe-suhoe-12"
+        },
+        {
+          "index": 475,
+          "score": 0.919127345085144,
+          "slug": "derbent-vino-di-kaspiko-rkatsiteli-beloe-polusladkoe-11"
+        },
+        {
+          "index": 474,
+          "score": 0.9137575030326843,
+          "slug": "derbent-vino-di-kaspiko-risling-beloe-suhoe-12"
+        },
+        {
+          "index": 481,
+          "score": 0.8973559141159058,
+          "slug": "derbent-vino-di-kaspiko-shardone-beloe-suhoe-125"
+        },
+        {
+          "index": 482,
+          "score": 0.893478274345398,
+          "slug": "derbent-vino-di-kaspiko-sovinon-sovinon-blan-beloe-suhoe-12"
+        }
+      ]
+    },
+    {
+      "true_slug": "massandra-muskatel-belyy-belye-sorta-vinograda-beloe-sladkoe-16",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1034,
+          "score": 0.9516363143920898,
+          "slug": "massandra-muskatel-belyy-belye-sorta-vinograda-beloe-sladkoe-16"
+        },
+        {
+          "index": 1037,
+          "score": 0.8663827776908875,
+          "slug": "massandra-pino-gri-beloe-sladkoe-16"
+        },
+        {
+          "index": 1001,
+          "score": 0.8594657778739929,
+          "slug": "madera-krymskaya"
+        },
+        {
+          "index": 1028,
+          "score": 0.8449500203132629,
+          "slug": "massandra-muskat-belyy-krasnogo-kamnya-beloe-sladkoe-13"
+        },
+        {
+          "index": 1041,
+          "score": 0.8388258814811707,
+          "slug": "massandra-portveyn-krasnyy-alushta-krasnye-sorta-vinograda-krasnoe-sladkoe-17"
+        }
+      ]
+    },
+    {
+      "true_slug": "relikta-relikta-muskat-belyy-beloe-suhoe-12",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1232,
+          "score": 0.8986057043075562,
+          "slug": "relikta-relikta-muskat-belyy-beloe-suhoe-12"
+        },
+        {
+          "index": 1231,
+          "score": 0.8547238111495972,
+          "slug": "relikta-relikta-muskat-beloe-polusuhoe-12"
+        },
+        {
+          "index": 1237,
+          "score": 0.8319870829582214,
+          "slug": "relikta-relikta-shardone-beloe-suhoe-12"
+        },
+        {
+          "index": 1233,
+          "score": 0.8082375526428223,
+          "slug": "relikta-relikta-pervenets-muskat-pervenets-magaracha-beloe-polusladkoe-125"
+        },
+        {
+          "index": 1238,
+          "score": 0.8046546578407288,
+          "slug": "relikta-relikta-sira-kaberne-fran-krasnoe-suhoe-13"
+        }
+      ]
+    },
+    {
+      "true_slug": "agora-blek-stoun",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 54,
+          "score": 0.9063372611999512,
+          "slug": "agora-blek-stoun"
+        },
+        {
+          "index": 58,
+          "score": 0.7800395488739014,
+          "slug": "agora-pino-nuar"
+        },
+        {
+          "index": 69,
+          "score": 0.7699549794197083,
+          "slug": "agora-sovinon"
+        },
+        {
+          "index": 53,
+          "score": 0.7522879242897034,
+          "slug": "agora-bastardo"
+        },
+        {
+          "index": 76,
+          "score": 0.7493754625320435,
+          "slug": "agora-yachting-cabernet-sauvignon"
+        }
+      ]
+    },
+    {
+      "true_slug": "olymp-winery-adagum-chardonnay-shardone-beloe-suhoe-11",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1149,
+          "score": 0.9709485769271851,
+          "slug": "olymp-winery-adagum-chardonnay-shardone-beloe-suhoe-11"
+        },
+        {
+          "index": 1148,
+          "score": 0.9423367381095886,
+          "slug": "olymp-winery-adagum-chardonnay-kuban-shardone-beloe-suhoe-11"
+        },
+        {
+          "index": 1146,
+          "score": 0.8718237280845642,
+          "slug": "olymp-winery-adagum-cabernet-franc-kaberne-fran-krasnoe-suhoe-11"
+        },
+        {
+          "index": 1147,
+          "score": 0.8677613735198975,
+          "slug": "olymp-winery-adagum-cabernet-sauvignon-kaberne-sovinon-krasnoe-suhoe-11"
+        },
+        {
+          "index": 1158,
+          "score": 0.8632187843322754,
+          "slug": "olymp-winery-adagum-odessa-black-kuban-odesskiy-chernyy-krasnoe-suhoe-11"
+        }
+      ]
+    },
+    {
+      "true_slug": "chteau-le-grand-vostock-pinot-noir-reserve-pino-nuar-krasnoe-suhoe-135",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 407,
+          "score": 0.8669171929359436,
+          "slug": "chteau-le-grand-vostock-pinot-noir-reserve-pino-nuar-krasnoe-suhoe-135"
+        },
+        {
+          "index": 375,
+          "score": 0.8320637941360474,
+          "slug": "chateau-le-grand-vostock-pino-nuar-rezerv-krasnoe-suhoe-14"
+        },
+        {
+          "index": 402,
+          "score": 0.811974048614502,
+          "slug": "chteau-le-grand-vostock-le-chene-royal-reserve-merlo-krasnoe-suhoe-145"
+        },
+        {
+          "index": 403,
+          "score": 0.8100779056549072,
+          "slug": "chteau-le-grand-vostock-merlot-merlo-krasnoe-suhoe-14"
+        },
+        {
+          "index": 405,
+          "score": 0.8017997741699219,
+          "slug": "chteau-le-grand-vostock-pinot-gris-reserve-pino-gri-beloe-suhoe-135"
+        }
+      ]
+    },
+    {
+      "true_slug": "stn-winery-muskat-beloe-suhoe-115",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1466,
+          "score": 0.8383385539054871,
+          "slug": "stn-winery-muskat-beloe-suhoe-115"
+        },
+        {
+          "index": 587,
+          "score": 0.6587072610855103,
+          "slug": "esse-muskat-oranzh-muskat-belyy-beloe-suhoe-115"
+        },
+        {
+          "index": 1619,
+          "score": 0.6472316384315491,
+          "slug": "vaynkraft-traminer-oranzh-traminer-rozovyy-oranzhevoe-suhoe-125"
+        },
+        {
+          "index": 192,
+          "score": 0.6395958662033081,
+          "slug": "aya-organic-wine-vineyards-evolution-pinot-noir-pino-nuar-krasnoe-suhoe-125"
+        },
+        {
+          "index": 1846,
+          "score": 0.6375031471252441,
+          "slug": "vinodelnya-raevskoe-glou-krasnoe-merlo-suhoe-14"
+        }
+      ]
+    },
+    {
+      "true_slug": "shato-pino-pino-nuar-krasnoe-suhoe-135",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1330,
+          "score": 0.8682740330696106,
+          "slug": "shato-pino-pino-nuar-krasnoe-suhoe-135"
+        },
+        {
+          "index": 1202,
+          "score": 0.8163739442825317,
+          "slug": "pino-nuar-premium"
+        },
+        {
+          "index": 1510,
+          "score": 0.8128779530525208,
+          "slug": "usadba-divnomorskoe-pinot-noir-pino-nuar-krasnoe-suhoe-12"
+        },
+        {
+          "index": 1467,
+          "score": 0.7781683206558228,
+          "slug": "stn-winery-pino-nuar-krasnoe-suhoe-12"
+        },
+        {
+          "index": 1462,
+          "score": 0.769555389881134,
+          "slug": "stn-winery-bratstvo-kochergi-pino-nuar-krasnoe-suhoe-12"
+        }
+      ]
+    },
+    {
+      "true_slug": "soyuz-vino-lavetti-krasnoe-suhoe-krasnye-sorta-vinograda-11",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1436,
+          "score": 0.8533473014831543,
+          "slug": "soyuz-vino-lavetti-krasnoe-suhoe-krasnye-sorta-vinograda-11"
+        },
+        {
+          "index": 1435,
+          "score": 0.822607159614563,
+          "slug": "soyuz-vino-lavetti-krasnoe-polusladkoe-krasnye-sorta-vinograda-11"
+        },
+        {
+          "index": 1437,
+          "score": 0.8042872548103333,
+          "slug": "soyuz-vino-lavetti-rozovoe-polusladkoe-krasnye-sorta-vinograda-11"
+        },
+        {
+          "index": 1434,
+          "score": 0.780552864074707,
+          "slug": "soyuz-vino-lavetti-beloe-suhoe-belye-sorta-vinograda-11"
+        },
+        {
+          "index": 1433,
+          "score": 0.7671051025390625,
+          "slug": "soyuz-vino-lavetti-beloe-polusladkoe-belye-sorta-vinograda-11"
+        }
+      ]
+    },
+    {
+      "true_slug": "katharon-katharon-sovinon-blan",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 859,
+          "score": 0.9408127665519714,
+          "slug": "katharon-katharon-sovinon-blan"
+        },
+        {
+          "index": 858,
+          "score": 0.9018375277519226,
+          "slug": "katharon-katharon-shardone"
+        },
+        {
+          "index": 855,
+          "score": 0.8777522444725037,
+          "slug": "katharon-katharon-kaberne-fran"
+        },
+        {
+          "index": 856,
+          "score": 0.8673722147941589,
+          "slug": "katharon-katharon-merlo"
+        },
+        {
+          "index": 857,
+          "score": 0.8549476861953735,
+          "slug": "katharon-katharon-risling-suhoe"
+        }
+      ]
+    },
+    {
+      "true_slug": "denisov-winery-tsitron-oranzh-tsitronnyy-magaracha-oranzhevoe-suhoe-105",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 451,
+          "score": 0.7779029011726379,
+          "slug": "denisov-winery-tsitron-oranzh-tsitronnyy-magaracha-oranzhevoe-suhoe-105"
+        },
+        {
+          "index": 614,
+          "score": 0.6884301900863647,
+          "slug": "esse-sovinon-blan-fyume-beloe-suhoe-128"
+        },
+        {
+          "index": 753,
+          "score": 0.6881592869758606,
+          "slug": "golubitskoe-estate-risling-oranzh-risling-reynskiy-oranzhevoe-suhoe-13"
+        },
+        {
+          "index": 88,
+          "score": 0.6878623366355896,
+          "slug": "agrolayn-mountain-eagle-chardonnay-shardone-beloe-suhoe-12"
+        },
+        {
+          "index": 1315,
+          "score": 0.6854181289672852,
+          "slug": "shato-pino-kaberne-fran-kaberne-sovinon-krasnoe-suhoe-135"
+        }
+      ]
+    },
+    {
+      "true_slug": "kuban-vino-shato-tamane-rezerv-myuller-turgau-limited-edishn-2021-beloe-suhoe-12",
+      "rank": 2,
+      "top_results": [
+        {
+          "index": 920,
+          "score": 0.8284591436386108,
+          "slug": "kuban-vino-shato-tamane-rezerv-myuller-turgau-limited-edishn-beloe-suhoe-13"
+        },
+        {
+          "index": 919,
+          "score": 0.8228784799575806,
+          "slug": "kuban-vino-shato-tamane-rezerv-myuller-turgau-limited-edishn-2021-beloe-suhoe-12"
+        },
+        {
+          "index": 915,
+          "score": 0.7850813269615173,
+          "slug": "kuban-vino-shato-tamane-rezerv-kollekshn-saperavi-2015-krasnoe-suhoe-13"
+        },
+        {
+          "index": 1504,
+          "score": 0.7756094932556152,
+          "slug": "usadba-divnomorskoe-holodnyy-tuman-risling-beloe-suhoe-115"
+        },
+        {
+          "index": 340,
+          "score": 0.7736678123474121,
+          "slug": "chateau-andre-traminer-beloe-suhoe-135"
+        }
+      ]
+    },
+    {
+      "true_slug": "polusladkoe-beloe-zolotaya-balka",
+      "rank": 3,
+      "top_results": [
+        {
+          "index": 1207,
+          "score": 0.91834557056427,
+          "slug": "polusuhoe-beloe-zolotaya-balka"
+        },
+        {
+          "index": 304,
+          "score": 0.9137994050979614,
+          "slug": "bryut-rozovoe-zolotaya-balka"
+        },
+        {
+          "index": 1206,
+          "score": 0.9123194217681885,
+          "slug": "polusladkoe-beloe-zolotaya-balka"
+        },
+        {
+          "index": 303,
+          "score": 0.9054487943649292,
+          "slug": "bryut-beloe-zolotaya-balka"
+        },
+        {
+          "index": 635,
+          "score": 0.8572211265563965,
+          "slug": "fanagoriya-blanc-de-blancs-shardone-beloe-bryut-12"
+        }
+      ]
+    },
+    {
+      "true_slug": "esse-dolinnoe-cabernet-franc-kaberne-fran-krasnoe-suhoe-13",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 569,
+          "score": 0.9339877367019653,
+          "slug": "esse-dolinnoe-cabernet-franc-kaberne-fran-krasnoe-suhoe-13"
+        },
+        {
+          "index": 590,
+          "score": 0.8754236698150635,
+          "slug": "esse-petit-verdot-pti-verdo-krasnoe-suhoe-13"
+        },
+        {
+          "index": 608,
+          "score": 0.8580145239830017,
+          "slug": "esse-sangiovese-sandzhoveze-krasnoe-suhoe-135"
+        },
+        {
+          "index": 567,
+          "score": 0.8138741254806519,
+          "slug": "esse-chenin-blanc-shenen-blan-beloe-suhoe-12"
+        },
+        {
+          "index": 570,
+          "score": 0.8078064322471619,
+          "slug": "esse-dolinnoe-chrdvnr-shardone-beloe-suhoe-13"
+        }
+      ]
+    },
+    {
+      "true_slug": "vina-arpachina-arpachino-aligote-ekstra-bryut-beloe-115",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1657,
+          "score": 0.8574269413948059,
+          "slug": "vina-arpachina-arpachino-aligote-ekstra-bryut-beloe-115"
+        },
+        {
+          "index": 1662,
+          "score": 0.8009012937545776,
+          "slug": "vina-arpachina-arpachino-tsimlyanskiy-chernyy-rozovoe-ekstra-bryut-13"
+        },
+        {
+          "index": 1659,
+          "score": 0.7814383506774902,
+          "slug": "vina-arpachina-arpachino-inohodets-kumshatskiy-beloe-ekstra-bryut-125"
+        },
+        {
+          "index": 1660,
+          "score": 0.7483930587768555,
+          "slug": "vina-arpachina-arpachino-inohodets-puhlyakovskiy-beloe-ekstra-bryut-125"
+        },
+        {
+          "index": 164,
+          "score": 0.7401061058044434,
+          "slug": "aratti-risling-suhoe"
+        }
+      ]
+    },
+    {
+      "true_slug": "vinodelnya-myshako-primitivo-blaufrankish-reserve-krasnoe-suhoe-142",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1780,
+          "score": 0.8730133771896362,
+          "slug": "vinodelnya-myshako-primitivo-blaufrankish-reserve-krasnoe-suhoe-142"
+        },
+        {
+          "index": 1779,
+          "score": 0.8693962097167969,
+          "slug": "vinodelnya-myshako-pino-nuar-karmener-reserve-krasnoe-suhoe-138"
+        },
+        {
+          "index": 1810,
+          "score": 0.8294522166252136,
+          "slug": "vinodelnya-myshako-semilon-aligote-reserve-beloe-suhoe-126"
+        },
+        {
+          "index": 1751,
+          "score": 0.8085020780563354,
+          "slug": "vinodelnya-myshako-chernoe-iz-chernogo-appassimento-kaberne-sovinon-krasnoe-suhoe-15"
+        },
+        {
+          "index": 747,
+          "score": 0.8019555807113647,
+          "slug": "golubitskoe-estate-noble-selection-red-blend-kaberne-sovinon-krasnoe-suhoe-136"
+        }
+      ]
+    },
+    {
+      "true_slug": "abrau-dyurso-aleksandr-ii-magnum-shardone-beloe-bryut-125",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 13,
+          "score": 0.9173372983932495,
+          "slug": "abrau-dyurso-aleksandr-ii-magnum-shardone-beloe-bryut-125"
+        },
+        {
+          "index": 1182,
+          "score": 0.7782273888587952,
+          "slug": "perovskih_blan_de_noir"
+        },
+        {
+          "index": 19,
+          "score": 0.7770378589630127,
+          "slug": "abrau-dyurso-brut-dor-blanc-de-noirs-pino-nuar-beloe-bryut-125"
+        },
+        {
+          "index": 1505,
+          "score": 0.7725960612297058,
+          "slug": "usadba-divnomorskoe-maris-blanc-de-blanc-extra-brut-shardone-beloe-ekstra-bryut-105"
+        },
+        {
+          "index": 20,
+          "score": 0.7721434235572815,
+          "slug": "abrau-dyurso-brut-dor-riesling-risling-beloe-bryut-12"
+        }
+      ]
+    },
+    {
+      "true_slug": "usadba-rodnoe-gnezdo-4-elements-risling-beloe-suhoe-12",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1554,
+          "score": 0.8652642369270325,
+          "slug": "usadba-rodnoe-gnezdo-4-elements-risling-beloe-suhoe-12"
+        },
+        {
+          "index": 1553,
+          "score": 0.8593491315841675,
+          "slug": "usadba-rodnoe-gnezdo-4-elements-risling-beloe-polusuhoe-12"
+        },
+        {
+          "index": 1557,
+          "score": 0.7959858179092407,
+          "slug": "usadba-rodnoe-gnezdo-4-elements-sovinon-blan-beloe-suhoe-12"
+        },
+        {
+          "index": 753,
+          "score": 0.7888169288635254,
+          "slug": "golubitskoe-estate-risling-oranzh-risling-reynskiy-oranzhevoe-suhoe-13"
+        },
+        {
+          "index": 754,
+          "score": 0.7877358794212341,
+          "slug": "golubitskoe-estate-risling"
+        }
+      ]
+    },
+    {
+      "true_slug": "villa-sofiya-trio-roze-pino-nuar-rozovoe-suhoe-14",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1650,
+          "score": 0.8834265470504761,
+          "slug": "villa-sofiya-trio-roze-pino-nuar-rozovoe-suhoe-14"
+        },
+        {
+          "index": 1647,
+          "score": 0.8221971988677979,
+          "slug": "villa-sofiya-trio-beloe-risling-suhoe-12"
+        },
+        {
+          "index": 1646,
+          "score": 0.7930425405502319,
+          "slug": "villa-sofiya-sovinon-blan-beloe-suhoe-14"
+        },
+        {
+          "index": 1644,
+          "score": 0.7820265889167786,
+          "slug": "villa-sofiya-shardone-beloe-suhoe-14"
+        },
+        {
+          "index": 1642,
+          "score": 0.7813323736190796,
+          "slug": "villa-sofiya-risling-beloe-suhoe-12"
+        }
+      ]
+    },
+    {
+      "true_slug": "cellar-master-malvaziya-beloe-suhoe-13",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 326,
+          "score": 0.8721301555633545,
+          "slug": "cellar-master-malvaziya-beloe-suhoe-13"
+        },
+        {
+          "index": 327,
+          "score": 0.8462862968444824,
+          "slug": "cellar-master-sandzhoveze-krasnoe-suhoe-125"
+        },
+        {
+          "index": 1673,
+          "score": 0.7551134824752808,
+          "slug": "vinodelnya-78-aligote-otbornoe-beloe-suhoe-12"
+        },
+        {
+          "index": 1034,
+          "score": 0.737334668636322,
+          "slug": "massandra-muskatel-belyy-belye-sorta-vinograda-beloe-sladkoe-16"
+        },
+        {
+          "index": 163,
+          "score": 0.7359040975570679,
+          "slug": "aratti-risling-beloe-polusuhoe"
+        }
+      ]
+    },
+    {
+      "true_slug": "soyuz-vino-kanonicheskie-traditsii-krasnoe-sladkoe-kaberne-sovinon-115",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1429,
+          "score": 0.8513243794441223,
+          "slug": "soyuz-vino-kanonicheskie-traditsii-krasnoe-sladkoe-kaberne-sovinon-115"
+        },
+        {
+          "index": 1428,
+          "score": 0.795898973941803,
+          "slug": "soyuz-vino-kanonicheskie-traditsii-krasnoe-polusladkoe-kaberne-sovinon-115"
+        },
+        {
+          "index": 288,
+          "score": 0.7948306798934937,
+          "slug": "blagolyubov-stanichnoe-stanichnyy-beloe-suhoe-12"
+        },
+        {
+          "index": 1591,
+          "score": 0.7772761583328247,
+          "slug": "valeriy-zaharin-dom-zaharinyh-krasnoe-kaberne-sovinon-suhoe-125"
+        },
+        {
+          "index": 1188,
+          "score": 0.770390510559082,
+          "slug": "perovskih_odesskiy_chernyi"
+        }
+      ]
+    },
+    {
+      "true_slug": "katharon-mezenka-sira",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 865,
+          "score": 0.9211664199829102,
+          "slug": "katharon-mezenka-sira"
+        },
+        {
+          "index": 862,
+          "score": 0.9199308753013611,
+          "slug": "katharon-mezenka-merlo"
+        },
+        {
+          "index": 861,
+          "score": 0.9169991612434387,
+          "slug": "katharon-mezenka-kaberne-fran"
+        },
+        {
+          "index": 866,
+          "score": 0.8713668584823608,
+          "slug": "katharon-mezenka-sovinon-blan"
+        },
+        {
+          "index": 860,
+          "score": 0.8233449459075928,
+          "slug": "katharon-mezenka-kaberne-fran-merlo"
+        }
+      ]
+    },
+    {
+      "true_slug": "fanagoriya-primum-alveus-ekstra-bryut-2017-pino-nuar-beloe-11-13",
+      "rank": 5,
+      "top_results": [
+        {
+          "index": 693,
+          "score": 0.8897720575332642,
+          "slug": "fanagoriya-primum-alveus-brut-2017-shardone-igristoe-bryut-beloe-12"
+        },
+        {
+          "index": 694,
+          "score": 0.8652284145355225,
+          "slug": "fanagoriya-primum-alveus-brut-2021-shardone-beloe-bryut-11-13"
+        },
+        {
+          "index": 690,
+          "score": 0.8575305342674255,
+          "slug": "fanagoriya-primum-alveus-blanc-de-noirs-meunier-ekstra-bryut-2019-mene-beloe-11-13"
+        },
+        {
+          "index": 691,
+          "score": 0.8483617305755615,
+          "slug": "fanagoriya-primum-alveus-brut-2014-shardone-igristoe-bryut-beloe-12"
+        },
+        {
+          "index": 696,
+          "score": 0.845428466796875,
+          "slug": "fanagoriya-primum-alveus-ekstra-bryut-2017-pino-nuar-beloe-11-13"
+        }
+      ]
+    },
+    {
+      "true_slug": "cantiani-riesling",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 318,
+          "score": 0.9375109672546387,
+          "slug": "cantiani-riesling"
+        },
+        {
+          "index": 317,
+          "score": 0.902551531791687,
+          "slug": "cantiani-riesling-rkatsiteli"
+        },
+        {
+          "index": 309,
+          "score": 0.8496699333190918,
+          "slug": "cantiani-aligote-riesling"
+        },
+        {
+          "index": 320,
+          "score": 0.8362353444099426,
+          "slug": "cantiani-rkatsiteli"
+        },
+        {
+          "index": 313,
+          "score": 0.8070707321166992,
+          "slug": "cantiani-cabernet-sauvignon"
+        }
+      ]
+    },
+    {
+      "true_slug": "david",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 440,
+          "score": 0.8464072942733765,
+          "slug": "david"
+        },
+        {
+          "index": 438,
+          "score": 0.808103084564209,
+          "slug": "david-2021"
+        },
+        {
+          "index": 439,
+          "score": 0.7546690702438354,
+          "slug": "david-2022"
+        },
+        {
+          "index": 221,
+          "score": 0.7508929371833801,
+          "slug": "barhat"
+        },
+        {
+          "index": 88,
+          "score": 0.7413299083709717,
+          "slug": "agrolayn-mountain-eagle-chardonnay-shardone-beloe-suhoe-12"
+        }
+      ]
+    },
+    {
+      "true_slug": "winemaker-selection",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1960,
+          "score": 0.9434831738471985,
+          "slug": "winemaker-selection"
+        },
+        {
+          "index": 821,
+          "score": 0.8235081434249878,
+          "slug": "inkermanskiy-zmv-inkerman-bryut-rkatsiteli-beloe-12"
+        },
+        {
+          "index": 828,
+          "score": 0.7971659898757935,
+          "slug": "inkermanskiy-zmv-inkerman-rozovoe-polusladkoe-rkatsiteli-12"
+        },
+        {
+          "index": 825,
+          "score": 0.7933180928230286,
+          "slug": "inkermanskiy-zmv-inkerman-polusladkoe-rkatsiteli-beloe-13"
+        },
+        {
+          "index": 823,
+          "score": 0.7927138805389404,
+          "slug": "inkermanskiy-zmv-inkerman-muskat-polusladkoe-beloe-13"
+        }
+      ]
+    },
+    {
+      "true_slug": "v2r-risling-risling-reynskiy-beloe-suhoe-122",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1563,
+          "score": 0.8472500443458557,
+          "slug": "v2r-risling-risling-reynskiy-beloe-suhoe-122"
+        },
+        {
+          "index": 1565,
+          "score": 0.8385649919509888,
+          "slug": "v2r-sovinon-blan-beloe-suhoe-13"
+        },
+        {
+          "index": 1564,
+          "score": 0.8192076683044434,
+          "slug": "v2r-roze-kaberne-sovinon-rozovoe-polusuhoe-13"
+        },
+        {
+          "index": 2035,
+          "score": 0.8153576850891113,
+          "slug": "zolotoe-pole-legend-of-crimea-sauvignon-blanc-sovinon-blan-beloe-suhoe-13"
+        },
+        {
+          "index": 754,
+          "score": 0.799919605255127,
+          "slug": "golubitskoe-estate-risling"
+        }
+      ]
+    },
+    {
+      "true_slug": "fanagoriya-primum-alveus-blanc-de-blancs-ekstra-bryut-2019-shardone-beloe-11-13",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 689,
+          "score": 0.8793251514434814,
+          "slug": "fanagoriya-primum-alveus-blanc-de-blancs-ekstra-bryut-2019-shardone-beloe-11-13"
+        },
+        {
+          "index": 690,
+          "score": 0.846519947052002,
+          "slug": "fanagoriya-primum-alveus-blanc-de-noirs-meunier-ekstra-bryut-2019-mene-beloe-11-13"
+        },
+        {
+          "index": 691,
+          "score": 0.8417720794677734,
+          "slug": "fanagoriya-primum-alveus-brut-2014-shardone-igristoe-bryut-beloe-12"
+        },
+        {
+          "index": 693,
+          "score": 0.8383320569992065,
+          "slug": "fanagoriya-primum-alveus-brut-2017-shardone-igristoe-bryut-beloe-12"
+        },
+        {
+          "index": 696,
+          "score": 0.8327128887176514,
+          "slug": "fanagoriya-primum-alveus-ekstra-bryut-2017-pino-nuar-beloe-11-13"
+        }
+      ]
+    },
+    {
+      "true_slug": "aya-organic-wine-vineyards-blush-3-kaberne-fran-rozovoe-ekstra-bryut-132",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 189,
+          "score": 0.8904197216033936,
+          "slug": "aya-organic-wine-vineyards-blush-3-kaberne-fran-rozovoe-ekstra-bryut-132"
+        },
+        {
+          "index": 190,
+          "score": 0.8405203819274902,
+          "slug": "aya-organic-wine-vineyards-blush-4-pino-nuar-krasnoe-ekstra-bryut-129"
+        },
+        {
+          "index": 187,
+          "score": 0.838381290435791,
+          "slug": "aya-organic-wine-vineyards-blush-1-sira-rozovoe-ekstra-bryut-135"
+        },
+        {
+          "index": 188,
+          "score": 0.8379798531532288,
+          "slug": "aya-organic-wine-vineyards-blush-2-merlo-rozovoe-ekstra-bryut-135"
+        },
+        {
+          "index": 1337,
+          "score": 0.7425567507743835,
+          "slug": "shato-pino-shary-kolduna-blash-pino-gri-rozovoe-suhoe-12"
+        }
+      ]
+    },
+    {
+      "true_slug": "gunko-winery-kaberne-fran-gunko-winery-krasnoe-suhoe-135",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 778,
+          "score": 0.887818455696106,
+          "slug": "gunko-winery-kaberne-fran-gunko-winery-krasnoe-suhoe-135"
+        },
+        {
+          "index": 786,
+          "score": 0.8335833549499512,
+          "slug": "gunko-winery-saperavi-gunko-winery-krasnoe-suhoe-135"
+        },
+        {
+          "index": 614,
+          "score": 0.8045724630355835,
+          "slug": "esse-sovinon-blan-fyume-beloe-suhoe-128"
+        },
+        {
+          "index": 784,
+          "score": 0.8000432848930359,
+          "slug": "gunko-winery-risling-rezerv-beloe-suhoe-135"
+        },
+        {
+          "index": 787,
+          "score": 0.7994877099990845,
+          "slug": "gunko-winery-sovinon-blan-gunko-winery-beloe-suhoe-135"
+        }
+      ]
+    },
+    {
+      "true_slug": "b-yu-rne-krasnostop-suhoe-krasnoe-classic",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 198,
+          "score": 0.9549860954284668,
+          "slug": "b-yu-rne-krasnostop-suhoe-krasnoe-classic"
+        },
+        {
+          "index": 1713,
+          "score": 0.9409531354904175,
+          "slug": "vinodelnya-byurne-merlo-krasnoe-suhoe-14"
+        },
+        {
+          "index": 200,
+          "score": 0.9252206683158875,
+          "slug": "b-yu-rne-malbek-krasnoe-suhoe"
+        },
+        {
+          "index": 204,
+          "score": 0.916903555393219,
+          "slug": "b-yu-rne-sira-krasnoe-suhoe-classic"
+        },
+        {
+          "index": 1709,
+          "score": 0.9124569296836853,
+          "slug": "vinodelnya-byurne-kaberne-sovinon-krasnoe-suhoe-135"
+        }
+      ]
+    },
+    {
+      "true_slug": "gavras-masour-murvedr-rozovoe-suhoe-12",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 735,
+          "score": 0.8877585530281067,
+          "slug": "gavras-masour-murvedr-rozovoe-suhoe-12"
+        },
+        {
+          "index": 1512,
+          "score": 0.761113703250885,
+          "slug": "usadba-divnomorskoe-rose-vione-rozovoe-suhoe-125"
+        },
+        {
+          "index": 1555,
+          "score": 0.759384274482727,
+          "slug": "usadba-rodnoe-gnezdo-4-elements-sira-roze-rozovoe-polusuhoe-135"
+        },
+        {
+          "index": 1941,
+          "score": 0.7462135553359985,
+          "slug": "vinogradniki-gay-kodzora-rose-cuvee-prestige-de-gai-kodzor-murvedr-rozovoe-suhoe-13"
+        },
+        {
+          "index": 265,
+          "score": 0.7459231615066528,
+          "slug": "belmas-winery-malbec-katya-belmas-malbek-rozovoe-suhoe-11"
+        }
+      ]
+    },
+    {
+      "true_slug": "vinodelnya-marchenko-merlo-krasnoe-suhoe-14",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1735,
+          "score": 0.9088705778121948,
+          "slug": "vinodelnya-marchenko-merlo-krasnoe-suhoe-14"
+        },
+        {
+          "index": 1734,
+          "score": 0.8714789748191833,
+          "slug": "vinodelnya-marchenko-krasnostop-zolotovskiy-krasnoe-suhoe-14"
+        },
+        {
+          "index": 1738,
+          "score": 0.8701579570770264,
+          "slug": "vinodelnya-marchenko-rubin-rubin-azos-krasnoe-suhoe-14"
+        },
+        {
+          "index": 1740,
+          "score": 0.8688269257545471,
+          "slug": "vinodelnya-marchenko-vermilon-kaberne-azos-krasnoe-suhoe-14"
+        },
+        {
+          "index": 1736,
+          "score": 0.8576043844223022,
+          "slug": "vinodelnya-marchenko-mtsvane-mtsvane-kahetinskiy-beloe-suhoe-135"
+        }
+      ]
+    },
+    {
+      "true_slug": "fanagoriya-rose-saperavi-rozovoe-polusuhoe-125",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 704,
+          "score": 0.8376898765563965,
+          "slug": "fanagoriya-rose-saperavi-rozovoe-polusuhoe-125"
+        },
+        {
+          "index": 703,
+          "score": 0.8271448016166687,
+          "slug": "fanagoriya-rose-kaberne-sovinon-rozovoe-polusuhoe-13"
+        },
+        {
+          "index": 618,
+          "score": 0.7151898145675659,
+          "slug": "evolution-pinot-noir"
+        },
+        {
+          "index": 1928,
+          "score": 0.7086890935897827,
+          "slug": "vinodelnya-zhakov-rozeo-saperavi-rozovoe-suhoe-115"
+        },
+        {
+          "index": 702,
+          "score": 0.689368724822998,
+          "slug": "fanagoriya-rose-kaberne-fran-rozovoe-suhoe-13"
+        }
+      ]
+    },
+    {
+      "true_slug": "relikta-relikta-risling-beloe-suhoe-12",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1236,
+          "score": 0.8798633217811584,
+          "slug": "relikta-relikta-risling-beloe-suhoe-12"
+        },
+        {
+          "index": 1240,
+          "score": 0.8259484767913818,
+          "slug": "relikta-relikta-traminer-beloe-suhoe-11"
+        },
+        {
+          "index": 1232,
+          "score": 0.8016795516014099,
+          "slug": "relikta-relikta-muskat-belyy-beloe-suhoe-12"
+        },
+        {
+          "index": 812,
+          "score": 0.7977432012557983,
+          "slug": "imenie-sikory-risling-sikory-beloe-suhoe-13"
+        },
+        {
+          "index": 1237,
+          "score": 0.7934735417366028,
+          "slug": "relikta-relikta-shardone-beloe-suhoe-12"
+        }
+      ]
+    },
+    {
+      "true_slug": "donskoe-vinodelcheskoe-hozyaystvo-elbuzd-pino-nuar-krasnoe-suhoe-13",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 541,
+          "score": 0.9151486754417419,
+          "slug": "donskoe-vinodelcheskoe-hozyaystvo-elbuzd-pino-nuar-krasnoe-suhoe-13"
+        },
+        {
+          "index": 540,
+          "score": 0.7758575677871704,
+          "slug": "donskoe-vinodelcheskoe-hozyaystvo-elbuzd-merlo-krasnoe-suhoe-13"
+        },
+        {
+          "index": 1201,
+          "score": 0.764504075050354,
+          "slug": "pino-nuar-dzhavaga"
+        },
+        {
+          "index": 963,
+          "score": 0.7593770027160645,
+          "slug": "leto-kollekcziya-vinodela-2020-suhoe-krasnoe"
+        },
+        {
+          "index": 1203,
+          "score": 0.750744104385376,
+          "slug": "pino-nuar"
+        }
+      ]
+    },
+    {
+      "true_slug": "villa-urkusta-kaberne-sovinon-klaret-rozovoe-polusuhoe-15",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1652,
+          "score": 0.88909912109375,
+          "slug": "villa-urkusta-kaberne-sovinon-klaret-rozovoe-polusuhoe-15"
+        },
+        {
+          "index": 1653,
+          "score": 0.8810842037200928,
+          "slug": "villa-urkusta-kaberne-sovinon-klassik-krasnoe-suhoe-12"
+        },
+        {
+          "index": 1654,
+          "score": 0.8810842037200928,
+          "slug": "villa-urkusta-kaberne-sovinon-klassik-krasnoe-suhoe-139"
+        },
+        {
+          "index": 1651,
+          "score": 0.8581454753875732,
+          "slug": "villa-urkusta-kaberne-sovinon-blan-de-nuar-beloe-suhoe-13"
+        },
+        {
+          "index": 1656,
+          "score": 0.8281526565551758,
+          "slug": "villa-urkusta-kaberne-sovinon-roze-de-sene-rozovoe-suhoe-13"
+        }
+      ]
+    },
+    {
+      "true_slug": "agrolayn-mountain-eagle-chardonnay-shardone-beloe-suhoe-12",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 88,
+          "score": 0.9262934923171997,
+          "slug": "agrolayn-mountain-eagle-chardonnay-shardone-beloe-suhoe-12"
+        },
+        {
+          "index": 96,
+          "score": 0.8491365909576416,
+          "slug": "agrolayn-mountain-eagle-viognier-vione-beloe-suhoe-115"
+        },
+        {
+          "index": 95,
+          "score": 0.8379671573638916,
+          "slug": "agrolayn-mountain-eagle-traminer-traminer-beloe-suhoe-12"
+        },
+        {
+          "index": 94,
+          "score": 0.8379671573638916,
+          "slug": "agrolayn-mountain-eagle-semillon-semilon-beloe-suhoe-11"
+        },
+        {
+          "index": 1288,
+          "score": 0.8202044367790222,
+          "slug": "shardone-premium"
+        }
+      ]
+    },
+    {
+      "true_slug": "uppa-winery-gevyurtstraminer-muskat-beloe-suhoe-14",
+      "rank": 3,
+      "top_results": [
+        {
+          "index": 1498,
+          "score": 0.8775250315666199,
+          "slug": "uppa-winery-sovinon-blan-rezerva-beloe-suhoe-12"
+        },
+        {
+          "index": 1496,
+          "score": 0.8749452233314514,
+          "slug": "uppa-winery-nebbiolo-krasnoe-suhoe-14"
+        },
+        {
+          "index": 1494,
+          "score": 0.8614963889122009,
+          "slug": "uppa-winery-gevyurtstraminer-muskat-beloe-suhoe-14"
+        },
+        {
+          "index": 1495,
+          "score": 0.8559368848800659,
+          "slug": "uppa-winery-kokur-kokur-belyy-beloe-suhoe-12"
+        },
+        {
+          "index": 1497,
+          "score": 0.8513150811195374,
+          "slug": "uppa-winery-pavel-shvets-cabernet-sauvignon-merlot-kaberne-sovinon-krasnoe-suhoe-14"
+        }
+      ]
+    },
+    {
+      "true_slug": "le-k2-v-tumane-sovinon-blan-beloe-suhoe-13",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 940,
+          "score": 0.8786045908927917,
+          "slug": "le-k2-v-tumane-sovinon-blan-beloe-suhoe-13"
+        },
+        {
+          "index": 938,
+          "score": 0.8468037843704224,
+          "slug": "le-k2-v-glubine-shardone-beloe-suhoe-13"
+        },
+        {
+          "index": 1087,
+          "score": 0.8354756832122803,
+          "slug": "nikolaev-i-synovya-festeliya-pti-verdo-krasnoe-suhoe-135"
+        },
+        {
+          "index": 1501,
+          "score": 0.8181643486022949,
+          "slug": "usadba-divnomorskoe-east-hill-vione-beloe-suhoe-127"
+        },
+        {
+          "index": 2035,
+          "score": 0.8134019374847412,
+          "slug": "zolotoe-pole-legend-of-crimea-sauvignon-blanc-sovinon-blan-beloe-suhoe-13"
+        }
+      ]
+    },
+    {
+      "true_slug": "novyj-svet-kollekczionnoe-bryut",
+      "rank": 2,
+      "top_results": [
+        {
+          "index": 1102,
+          "score": 0.9042484760284424,
+          "slug": "novyj-svet-polusuhoe-kollekczionnoe"
+        },
+        {
+          "index": 1098,
+          "score": 0.8951637744903564,
+          "slug": "novyj-svet-kollekczionnoe-bryut"
+        },
+        {
+          "index": 1105,
+          "score": 0.8744471669197083,
+          "slug": "novyj-svet-shardone-kyuve-de-prestizh"
+        },
+        {
+          "index": 1103,
+          "score": 0.8602998852729797,
+          "slug": "novyj-svet-risling-kyuve-de-prestizh"
+        },
+        {
+          "index": 1107,
+          "score": 0.8570180535316467,
+          "slug": "novyj-svet-vyderzhannoe-bryut"
+        }
+      ]
+    },
+    {
+      "true_slug": "belbek-sandzhoveze-krasnoe-suhoe-14",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 255,
+          "score": 0.8513678312301636,
+          "slug": "belbek-sandzhoveze-krasnoe-suhoe-14"
+        },
+        {
+          "index": 242,
+          "score": 0.8459254503250122,
+          "slug": "belbek-meritazh-kaberne-sovinon-krasnoe-suhoe-136"
+        },
+        {
+          "index": 244,
+          "score": 0.8421491980552673,
+          "slug": "belbek-muskat-muskat-belyy-beloe-suhoe-127"
+        },
+        {
+          "index": 226,
+          "score": 0.8337905406951904,
+          "slug": "belbek-belbek-meritazh-kaberne-sovinon-krasnoe-suhoe-135"
+        },
+        {
+          "index": 235,
+          "score": 0.8306163549423218,
+          "slug": "belbek-belbek-sandzhoveze-krasnoe-suhoe-138"
+        }
+      ]
+    },
+    {
+      "true_slug": "zmv-koktebel-kokur-bryut-beloe-11",
+      "rank": null,
+      "top_results": [
+        {
+          "index": 1188,
+          "score": 0.8050734996795654,
+          "slug": "perovskih_odesskiy_chernyi"
+        },
+        {
+          "index": 1885,
+          "score": 0.803266704082489,
+          "slug": "vinodelnya-vedernikov-gubernatorskiy-rezerv-krasnoe-kaberne-sovinon-suhoe-14"
+        },
+        {
+          "index": 2005,
+          "score": 0.7975119352340698,
+          "slug": "zmv-koktebel-ruzh-rubinovyy-magaracha-krasnoe-suhoe-135"
+        },
+        {
+          "index": 879,
+          "score": 0.7892769575119019,
+          "slug": "krasnostop-zolotovskij"
+        },
+        {
+          "index": 35,
+          "score": 0.7888567447662354,
+          "slug": "abrau-dyurso-risling-beloe-suhoe-12"
+        }
+      ]
+    },
+    {
+      "true_slug": "vinodelnya-vedernikov-gubernatorskoe-risling-beloe-suhoe-12",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1888,
+          "score": 0.8830939531326294,
+          "slug": "vinodelnya-vedernikov-gubernatorskoe-risling-beloe-suhoe-12"
+        },
+        {
+          "index": 1915,
+          "score": 0.8545165061950684,
+          "slug": "vinodelnya-vedernikov-vedernikov-puhlyakovskiy-beloe-suhoe-12"
+        },
+        {
+          "index": 1884,
+          "score": 0.8205122947692871,
+          "slug": "vinodelnya-vedernikov-gubernatorskiy-rezerv-beloe-risling-suhoe-12"
+        },
+        {
+          "index": 1899,
+          "score": 0.8158378601074219,
+          "slug": "vinodelnya-vedernikov-sibirkovyy-beloe-suhoe-11"
+        },
+        {
+          "index": 35,
+          "score": 0.8050246238708496,
+          "slug": "abrau-dyurso-risling-beloe-suhoe-12"
+        }
+      ]
+    },
+    {
+      "true_slug": "green-cape-sovinon-blan",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 775,
+          "score": 0.9243414998054504,
+          "slug": "green-cape-sovinon-blan"
+        },
+        {
+          "index": 1074,
+          "score": 0.8240392208099365,
+          "slug": "myshako-green-cape-shardone-beloe-bryut"
+        },
+        {
+          "index": 774,
+          "score": 0.7899507880210876,
+          "slug": "green-cape-risling"
+        },
+        {
+          "index": 1288,
+          "score": 0.7832214832305908,
+          "slug": "shardone-premium"
+        },
+        {
+          "index": 88,
+          "score": 0.7505804300308228,
+          "slug": "agrolayn-mountain-eagle-chardonnay-shardone-beloe-suhoe-12"
+        }
+      ]
+    },
+    {
+      "true_slug": "aratti-muskat-belyj-polusuhoe",
+      "rank": 2,
+      "top_results": [
+        {
+          "index": 162,
+          "score": 0.9199720621109009,
+          "slug": "aratti-muskat-belyj-suhoe"
+        },
+        {
+          "index": 161,
+          "score": 0.9125537872314453,
+          "slug": "aratti-muskat-belyj-polusuhoe"
+        },
+        {
+          "index": 163,
+          "score": 0.9049664735794067,
+          "slug": "aratti-risling-beloe-polusuhoe"
+        },
+        {
+          "index": 164,
+          "score": 0.8864821195602417,
+          "slug": "aratti-risling-suhoe"
+        },
+        {
+          "index": 166,
+          "score": 0.8739190101623535,
+          "slug": "aratti-sovinon-blan-beloe-polusuhoe"
+        }
+      ]
+    },
+    {
+      "true_slug": "novyy-svet-dom-shampanskih-vin-rossiyskoe-shampanskoe-kollektsionnoe-polusuhoe-beloe-novyy-svet-shardone-13",
+      "rank": 2,
+      "top_results": [
+        {
+          "index": 1129,
+          "score": 0.9237751960754395,
+          "slug": "novyy-svet-dom-shampanskih-vin-rossiyskoe-shampanskoe-kollektsionnoe-polusuhoe-beloe-novyy-svet-risling-125"
+        },
+        {
+          "index": 1130,
+          "score": 0.9226937890052795,
+          "slug": "novyy-svet-dom-shampanskih-vin-rossiyskoe-shampanskoe-kollektsionnoe-polusuhoe-beloe-novyy-svet-shardone-13"
+        },
+        {
+          "index": 1132,
+          "score": 0.8813174962997437,
+          "slug": "novyy-svet-dom-shampanskih-vin-rossiyskoe-shampanskoe-vyderzhannoe-bryut-beloe-novyy-svet-shardone-125"
+        },
+        {
+          "index": 1128,
+          "score": 0.8759901523590088,
+          "slug": "novyy-svet-dom-shampanskih-vin-rossiyskoe-shampanskoe-kollektsionnoe-ekstra-bryut-beloe-novyy-svet-shardone-125"
+        },
+        {
+          "index": 1109,
+          "score": 0.8502938151359558,
+          "slug": "novyy-svet-dom-shampanskih-vin-igristoe-vino-vyderzhannoe-bryut-krasnoe-novyy-svet-kaberne-sovinon-135"
+        }
+      ]
+    },
+    {
+      "true_slug": "esse-rkatsiteli-beloe-suhoe-125",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 600,
+          "score": 0.8993660807609558,
+          "slug": "esse-rkatsiteli-beloe-suhoe-125"
+        },
+        {
+          "index": 611,
+          "score": 0.8756024837493896,
+          "slug": "esse-shardone-otbornoe-beloe-suhoe-12"
+        },
+        {
+          "index": 614,
+          "score": 0.8696972727775574,
+          "slug": "esse-sovinon-blan-fyume-beloe-suhoe-128"
+        },
+        {
+          "index": 613,
+          "score": 0.8694246411323547,
+          "slug": "esse-sovinon-blan-beloe-suhoe-12"
+        },
+        {
+          "index": 615,
+          "score": 0.8637874126434326,
+          "slug": "esse-vione-beloe-suhoe-13"
+        }
+      ]
+    },
+    {
+      "true_slug": "vinodelnya-begildeeva-merlo-krasnoe-suhoe-14",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1698,
+          "score": 0.8946022391319275,
+          "slug": "vinodelnya-begildeeva-merlo-krasnoe-suhoe-14"
+        },
+        {
+          "index": 1743,
+          "score": 0.777002215385437,
+          "slug": "vinodelnya-marko-merlo-krasnoe-suhoe-14"
+        },
+        {
+          "index": 227,
+          "score": 0.7748449444770813,
+          "slug": "belbek-belbek-merlo-krasnoe-suhoe-129"
+        },
+        {
+          "index": 490,
+          "score": 0.7692827582359314,
+          "slug": "derbent-vino-endemy-saperavi-krasnoe-suhoe-13"
+        },
+        {
+          "index": 487,
+          "score": 0.7692827582359314,
+          "slug": "derbent-vino-endemy-merlo-krasnoe-suhoe-13"
+        }
+      ]
+    },
+    {
+      "true_slug": "shardone-barrel-2023",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1287,
+          "score": 0.948114275932312,
+          "slug": "shardone-barrel-2023"
+        },
+        {
+          "index": 88,
+          "score": 0.8460831642150879,
+          "slug": "agrolayn-mountain-eagle-chardonnay-shardone-beloe-suhoe-12"
+        },
+        {
+          "index": 1050,
+          "score": 0.8363900184631348,
+          "slug": "millstream-av-igristoe-molodoe-suhoe-beloe"
+        },
+        {
+          "index": 1514,
+          "score": 0.8324030637741089,
+          "slug": "usadba-divnomorskoe-solnechnyy-veter-shardone-beloe-suhoe-125"
+        },
+        {
+          "index": 1504,
+          "score": 0.8309704661369324,
+          "slug": "usadba-divnomorskoe-holodnyy-tuman-risling-beloe-suhoe-115"
+        }
+      ]
+    },
+    {
+      "true_slug": "rozovoe-bryut",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1266,
+          "score": 0.7803771495819092,
+          "slug": "rozovoe-bryut"
+        },
+        {
+          "index": 1068,
+          "score": 0.7466779351234436,
+          "slug": "monte-garu-beloe-polusladkoe"
+        },
+        {
+          "index": 1067,
+          "score": 0.736250638961792,
+          "slug": "monte-garu-beloe-bryut"
+        },
+        {
+          "index": 574,
+          "score": 0.7231952548027039,
+          "slug": "esse-esse-shardone-beloe-suhoe-125"
+        },
+        {
+          "index": 88,
+          "score": 0.7204777002334595,
+          "slug": "agrolayn-mountain-eagle-chardonnay-shardone-beloe-suhoe-12"
+        }
+      ]
+    },
+    {
+      "true_slug": "vinodelnya-myshako-sesto-senso-tropicheskiy-vzryv-sovinon-blan-beloe-suhoe-12",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1813,
+          "score": 0.8544698357582092,
+          "slug": "vinodelnya-myshako-sesto-senso-tropicheskiy-vzryv-sovinon-blan-beloe-suhoe-12"
+        },
+        {
+          "index": 1812,
+          "score": 0.7966094017028809,
+          "slug": "vinodelnya-myshako-sesto-senso-tropicheskiy-vzryv-gevyurtstraminer-beloe-suhoe-12"
+        },
+        {
+          "index": 1811,
+          "score": 0.7845223546028137,
+          "slug": "vinodelnya-myshako-sesto-senso-fruktovyy-vzryv-kaberne-sovinon-krasnoe-suhoe-155"
+        },
+        {
+          "index": 1814,
+          "score": 0.7839287519454956,
+          "slug": "vinodelnya-myshako-sesto-senso-yagodnyy-vzryv-merlo-rozovoe-suhoe-122"
+        },
+        {
+          "index": 754,
+          "score": 0.7739378213882446,
+          "slug": "golubitskoe-estate-risling"
+        }
+      ]
+    },
+    {
+      "true_slug": "vinodelnya-myshako-kaberne-sovinon-krasnoe-suhoe-138",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1764,
+          "score": 0.8197917938232422,
+          "slug": "vinodelnya-myshako-kaberne-sovinon-krasnoe-suhoe-138"
+        },
+        {
+          "index": 1768,
+          "score": 0.8158644437789917,
+          "slug": "vinodelnya-myshako-marselan-krasnoe-suhoe-144"
+        },
+        {
+          "index": 1760,
+          "score": 0.8053390979766846,
+          "slug": "vinodelnya-myshako-kaberne-fran-avtorskaya-tehnologiya-krasnoe-suhoe-142"
+        },
+        {
+          "index": 1762,
+          "score": 0.7970608472824097,
+          "slug": "vinodelnya-myshako-kaberne-myshako-grand-rezerv-kaberne-sovinon-krasnoe-suhoe-125"
+        },
+        {
+          "index": 1766,
+          "score": 0.793608546257019,
+          "slug": "vinodelnya-myshako-marselan-avtorskaya-tehnologiya-krasnoe-suhoe-144"
+        }
+      ]
+    },
+    {
+      "true_slug": "glu-glu-samba",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 740,
+          "score": 0.9072065949440002,
+          "slug": "glu-glu-samba"
+        },
+        {
+          "index": 738,
+          "score": 0.8976200819015503,
+          "slug": "glu-glu-butch"
+        },
+        {
+          "index": 739,
+          "score": 0.820828914642334,
+          "slug": "glu-glu-mr-mouse-2022"
+        },
+        {
+          "index": 618,
+          "score": 0.7588237524032593,
+          "slug": "evolution-pinot-noir"
+        },
+        {
+          "index": 1908,
+          "score": 0.7441369295120239,
+          "slug": "vinodelnya-vedernikov-vedernikov-gubernatorskoe-golubok-krasnoe-suhoe-115"
+        }
+      ]
+    },
+    {
+      "true_slug": "perovskih_blan_de_noir",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1182,
+          "score": 0.8501607179641724,
+          "slug": "perovskih_blan_de_noir"
+        },
+        {
+          "index": 1359,
+          "score": 0.7943476438522339,
+          "slug": "shato-taman-polusladkoe"
+        },
+        {
+          "index": 1502,
+          "score": 0.7908673286437988,
+          "slug": "usadba-divnomorskoe-grande-cuvee-shardone-beloe-bryut-125"
+        },
+        {
+          "index": 1506,
+          "score": 0.7897742986679077,
+          "slug": "usadba-divnomorskoe-maris-blanc-de-noirs-extra-brut-pino-nuar-beloe-ekstra-bryut-105"
+        },
+        {
+          "index": 1505,
+          "score": 0.7892494201660156,
+          "slug": "usadba-divnomorskoe-maris-blanc-de-blanc-extra-brut-shardone-beloe-ekstra-bryut-105"
+        }
+      ]
+    },
+    {
+      "true_slug": "chteau-le-grand-vostock-cabernet-sauvignon-reserve-kaberne-sovinon-krasnoe-suhoe-14",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 393,
+          "score": 0.8616214394569397,
+          "slug": "chteau-le-grand-vostock-cabernet-sauvignon-reserve-kaberne-sovinon-krasnoe-suhoe-14"
+        },
+        {
+          "index": 392,
+          "score": 0.8442238569259644,
+          "slug": "chteau-le-grand-vostock-cabernet-sauvignon-kaberne-sovinon-krasnoe-suhoe-14"
+        },
+        {
+          "index": 403,
+          "score": 0.8371003866195679,
+          "slug": "chteau-le-grand-vostock-merlot-merlo-krasnoe-suhoe-14"
+        },
+        {
+          "index": 396,
+          "score": 0.8257794380187988,
+          "slug": "chteau-le-grand-vostock-chardonnay-shardone-beloe-suhoe-14"
+        },
+        {
+          "index": 402,
+          "score": 0.82557612657547,
+          "slug": "chteau-le-grand-vostock-le-chene-royal-reserve-merlo-krasnoe-suhoe-145"
+        }
+      ]
+    },
+    {
+      "true_slug": "soyuz-vino-shato-de-mongolfer-shiraz-moellyo-krasnoe-polusladkoe-11",
+      "rank": 2,
+      "top_results": [
+        {
+          "index": 1443,
+          "score": 0.8587089776992798,
+          "slug": "soyuz-vino-shato-de-mongolfer-shiraz-polusuhoe-krasnoe-11"
+        },
+        {
+          "index": 1442,
+          "score": 0.8573923110961914,
+          "slug": "soyuz-vino-shato-de-mongolfer-shiraz-moellyo-krasnoe-polusladkoe-11"
+        },
+        {
+          "index": 1441,
+          "score": 0.7703864574432373,
+          "slug": "soyuz-vino-shato-de-mongolfer-risling-polusuhoe-beloe-11"
+        },
+        {
+          "index": 1344,
+          "score": 0.7234860062599182,
+          "slug": "shato-pino-shiraz-krasnoe-suhoe-135"
+        },
+        {
+          "index": 1345,
+          "score": 0.7104331254959106,
+          "slug": "shato-pino-shiraz-krasnoe-suhoe-14"
+        }
+      ]
+    },
+    {
+      "true_slug": "alma-valley-traminer-beloe-suhoe-125",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 142,
+          "score": 0.9398012161254883,
+          "slug": "alma-valley-traminer-beloe-suhoe-125"
+        },
+        {
+          "index": 127,
+          "score": 0.8011345863342285,
+          "slug": "alma-valley-shardone-beloe-suhoe-135"
+        },
+        {
+          "index": 140,
+          "score": 0.7943021059036255,
+          "slug": "alma-valley-tempranilo-krasnoe-suhoe-13"
+        },
+        {
+          "index": 129,
+          "score": 0.7938069105148315,
+          "slug": "alma-valley-shardone-rezerv-beloe-suhoe-14"
+        },
+        {
+          "index": 124,
+          "score": 0.7833380699157715,
+          "slug": "alma-valley-rislaner-beloe-polusladkoe-125"
+        }
+      ]
+    },
+    {
+      "true_slug": "agrolayn-mountain-eagle-sauvignon-blanc-sovinon-blan-beloe-suhoe-125",
+      "rank": 2,
+      "top_results": [
+        {
+          "index": 88,
+          "score": 0.8620874881744385,
+          "slug": "agrolayn-mountain-eagle-chardonnay-shardone-beloe-suhoe-12"
+        },
+        {
+          "index": 93,
+          "score": 0.8326557874679565,
+          "slug": "agrolayn-mountain-eagle-sauvignon-blanc-sovinon-blan-beloe-suhoe-125"
+        },
+        {
+          "index": 96,
+          "score": 0.8303240537643433,
+          "slug": "agrolayn-mountain-eagle-viognier-vione-beloe-suhoe-115"
+        },
+        {
+          "index": 94,
+          "score": 0.8297271132469177,
+          "slug": "agrolayn-mountain-eagle-semillon-semilon-beloe-suhoe-11"
+        },
+        {
+          "index": 95,
+          "score": 0.8297271132469177,
+          "slug": "agrolayn-mountain-eagle-traminer-traminer-beloe-suhoe-12"
+        }
+      ]
+    },
+    {
+      "true_slug": "shato-taman-par-la-mer-czvajgelt",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1354,
+          "score": 0.8274152874946594,
+          "slug": "shato-taman-par-la-mer-czvajgelt"
+        },
+        {
+          "index": 333,
+          "score": 0.7055103778839111,
+          "slug": "chateau-andre-merlo-krasnoe-suhoe-14"
+        },
+        {
+          "index": 88,
+          "score": 0.7043498754501343,
+          "slug": "agrolayn-mountain-eagle-chardonnay-shardone-beloe-suhoe-12"
+        },
+        {
+          "index": 1348,
+          "score": 0.7007474899291992,
+          "slug": "shato-taman-bryut"
+        },
+        {
+          "index": 403,
+          "score": 0.6973069310188293,
+          "slug": "chteau-le-grand-vostock-merlot-merlo-krasnoe-suhoe-14"
+        }
+      ]
+    },
+    {
+      "true_slug": "derbent-vino-desono-saperavi-krasnoe-suhoe-125",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 466,
+          "score": 0.94718337059021,
+          "slug": "derbent-vino-desono-saperavi-krasnoe-suhoe-125"
+        },
+        {
+          "index": 467,
+          "score": 0.8985732197761536,
+          "slug": "derbent-vino-desono-saperavi-roze-rozovoe-suhoe-125"
+        },
+        {
+          "index": 461,
+          "score": 0.8757989406585693,
+          "slug": "derbent-vino-desono-kaberne-sovinon-krasnoe-suhoe-125"
+        },
+        {
+          "index": 465,
+          "score": 0.8575639724731445,
+          "slug": "derbent-vino-desono-rkatsiteli-oranzh-beloe-suhoe-125"
+        },
+        {
+          "index": 468,
+          "score": 0.8449243307113647,
+          "slug": "derbent-vino-desono-shardone-beloe-suhoe-125"
+        }
+      ]
+    },
+    {
+      "true_slug": "valeriy-zaharin-bakkal-su-aligote-beloe-suhoe-115",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1583,
+          "score": 0.881940484046936,
+          "slug": "valeriy-zaharin-bakkal-su-aligote-beloe-suhoe-115"
+        },
+        {
+          "index": 1586,
+          "score": 0.8485676646232605,
+          "slug": "valeriy-zaharin-bakkal-su-saperavi-bastardo-kaberne-sovinon-krasnoe-polusladkoe-11"
+        },
+        {
+          "index": 1602,
+          "score": 0.8446819186210632,
+          "slug": "valeriy-zaharin-saperavi-kaberne-sovinon-bakkal-su-krasnoe-suhoe-12"
+        },
+        {
+          "index": 1587,
+          "score": 0.8377431631088257,
+          "slug": "valeriy-zaharin-bakkal-su-saperavi-kaberne-sovinon-krasnoe-suhoe-12"
+        },
+        {
+          "index": 1584,
+          "score": 0.8355878591537476,
+          "slug": "valeriy-zaharin-bakkal-su-kaberne-kaberne-sovinon-krasnoe-suhoe-125"
+        }
+      ]
+    },
+    {
+      "true_slug": "esse-pino-gri-beloe-suhoe-135",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 592,
+          "score": 0.8911663889884949,
+          "slug": "esse-pino-gri-beloe-suhoe-135"
+        },
+        {
+          "index": 1087,
+          "score": 0.8837993144989014,
+          "slug": "nikolaev-i-synovya-festeliya-pti-verdo-krasnoe-suhoe-135"
+        },
+        {
+          "index": 1875,
+          "score": 0.8541076183319092,
+          "slug": "vinodelnya-uzunov-rash-risling-beloe-suhoe-127"
+        },
+        {
+          "index": 1639,
+          "score": 0.8468382358551025,
+          "slug": "villa-di-alma-pti-verdo-krasnoe-suhoe-125"
+        },
+        {
+          "index": 1478,
+          "score": 0.8447315692901611,
+          "slug": "tempelhof-winery-risling-risling-reynskiy-beloe-suhoe-115"
+        }
+      ]
+    },
+    {
+      "true_slug": "zolotaya-balka-zb-moscato-semi-sweet-rose-muskat-yantarnyy-rozovoe-polusladkoe-9",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 2017,
+          "score": 0.9274901747703552,
+          "slug": "zolotaya-balka-zb-moscato-semi-sweet-rose-muskat-yantarnyy-rozovoe-polusladkoe-9"
+        },
+        {
+          "index": 1968,
+          "score": 0.8756797909736633,
+          "slug": "zb-wine-moscato-beloe-polusladkoe"
+        },
+        {
+          "index": 791,
+          "score": 0.8000338077545166,
+          "slug": "igristoe-vino-bryut-rozovoe-di-kaspiko-blan-de-nuar-di-caspico-blanc-de-noirs"
+        },
+        {
+          "index": 1750,
+          "score": 0.8000153303146362,
+          "slug": "vinodelnya-myshako-blanc-de-blancs-shardone-beloe-bryut-121"
+        },
+        {
+          "index": 1808,
+          "score": 0.796203076839447,
+          "slug": "vinodelnya-myshako-rose-de-noirs-pino-nuar-rozovoe-bryut-123"
+        }
+      ]
+    },
+    {
+      "true_slug": "aratti-risling-beloe-polusuhoe",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 163,
+          "score": 0.935448944568634,
+          "slug": "aratti-risling-beloe-polusuhoe"
+        },
+        {
+          "index": 164,
+          "score": 0.9138936996459961,
+          "slug": "aratti-risling-suhoe"
+        },
+        {
+          "index": 162,
+          "score": 0.8807080388069153,
+          "slug": "aratti-muskat-belyj-suhoe"
+        },
+        {
+          "index": 161,
+          "score": 0.8637239933013916,
+          "slug": "aratti-muskat-belyj-polusuhoe"
+        },
+        {
+          "index": 165,
+          "score": 0.858431339263916,
+          "slug": "aratti-shardone-beloe-suhoe"
+        }
+      ]
+    },
+    {
+      "true_slug": "vinodelnya-myshako-chernoe-iz-chernogo-appassimento-kaberne-sovinon-krasnoe-suhoe-15",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1751,
+          "score": 0.88629150390625,
+          "slug": "vinodelnya-myshako-chernoe-iz-chernogo-appassimento-kaberne-sovinon-krasnoe-suhoe-15"
+        },
+        {
+          "index": 1752,
+          "score": 0.8346270322799683,
+          "slug": "vinodelnya-myshako-chernoe-iz-krasnogo-appassimento-kaberne-sovinon-krasnoe-polusuhoe-15"
+        },
+        {
+          "index": 1780,
+          "score": 0.8061190843582153,
+          "slug": "vinodelnya-myshako-primitivo-blaufrankish-reserve-krasnoe-suhoe-142"
+        },
+        {
+          "index": 1779,
+          "score": 0.8015041947364807,
+          "slug": "vinodelnya-myshako-pino-nuar-karmener-reserve-krasnoe-suhoe-138"
+        },
+        {
+          "index": 1753,
+          "score": 0.7830555438995361,
+          "slug": "vinodelnya-myshako-chernyy-udar-marselan-krasnoe-suhoe-162"
+        }
+      ]
+    },
+    {
+      "true_slug": "vinodelnya-myshako-merlo-zinfandel-kyuve-rozovoe-suhoe-128",
+      "rank": 2,
+      "top_results": [
+        {
+          "index": 1826,
+          "score": 0.860300600528717,
+          "slug": "vinodelnya-myshako-sovinon-blan-kyuve-beloe-suhoe-134"
+        },
+        {
+          "index": 1774,
+          "score": 0.8595356941223145,
+          "slug": "vinodelnya-myshako-merlo-zinfandel-kyuve-rozovoe-suhoe-128"
+        },
+        {
+          "index": 1830,
+          "score": 0.8249208331108093,
+          "slug": "vinodelnya-myshako-sovinon-semilon-kyuve-sovinon-blan-beloe-suhoe-132"
+        },
+        {
+          "index": 1773,
+          "score": 0.8117493391036987,
+          "slug": "vinodelnya-myshako-merlo-tempranilo-kyuve-krasnoe-polusladkoe-135"
+        },
+        {
+          "index": 1822,
+          "score": 0.8075899481773376,
+          "slug": "vinodelnya-myshako-sira-marselan-kyuve-krasnoe-suhoe-136"
+        }
+      ]
+    },
+    {
+      "true_slug": "b-yu-rne-vinisa-zh-suhoe-krasnoe",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 206,
+          "score": 0.8973132967948914,
+          "slug": "b-yu-rne-vinisa-zh-suhoe-krasnoe"
+        },
+        {
+          "index": 192,
+          "score": 0.8474112749099731,
+          "slug": "aya-organic-wine-vineyards-evolution-pinot-noir-pino-nuar-krasnoe-suhoe-125"
+        },
+        {
+          "index": 207,
+          "score": 0.8392254710197449,
+          "slug": "b-yu-rne-vinisa-zh-suhoe-rozovoe"
+        },
+        {
+          "index": 205,
+          "score": 0.8357948064804077,
+          "slug": "b-yu-rne-vinisa-zh-suhoe-beloe"
+        },
+        {
+          "index": 1712,
+          "score": 0.8160210847854614,
+          "slug": "vinodelnya-byurne-lyublyu-krasnoe-kaberne-fran-suhoe-135"
+        }
+      ]
+    },
+    {
+      "true_slug": "kuban-vino-shato-tamane-terruar-krasnostop-saperavi-2022-krasnoe-suhoe-125",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 928,
+          "score": 0.8346579074859619,
+          "slug": "kuban-vino-shato-tamane-terruar-krasnostop-saperavi-2022-krasnoe-suhoe-125"
+        },
+        {
+          "index": 929,
+          "score": 0.8334454298019409,
+          "slug": "kuban-vino-shato-tamane-terruar-krasnostop-saperavi-2023-krasnoe-suhoe-125"
+        },
+        {
+          "index": 1516,
+          "score": 0.7923749685287476,
+          "slug": "usadba-divnomorskoe-yuzhnyy-les-merlo-krasnoe-suhoe-137"
+        },
+        {
+          "index": 801,
+          "score": 0.7800016403198242,
+          "slug": "imenie-sikory-kaberne-sovinon-semeynyy-rezerv-krasnoe-suhoe-14"
+        },
+        {
+          "index": 1270,
+          "score": 0.779818058013916,
+          "slug": "rubin-golodrigi"
+        }
+      ]
+    },
+    {
+      "true_slug": "shato-pino-aligote-rkatsiteli-beloe-suhoe-12",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1301,
+          "score": 0.7797600030899048,
+          "slug": "shato-pino-aligote-rkatsiteli-beloe-suhoe-12"
+        },
+        {
+          "index": 1302,
+          "score": 0.7155458927154541,
+          "slug": "shato-pino-aligote-rkatsiteli-suhoe-beloe-12"
+        },
+        {
+          "index": 1969,
+          "score": 0.695562481880188,
+          "slug": "zhemchuzhnaya-9-aligote-czitron"
+        },
+        {
+          "index": 1971,
+          "score": 0.6937413215637207,
+          "slug": "zhemchuzhnaya-9-czitron-shardone"
+        },
+        {
+          "index": 1308,
+          "score": 0.6928050518035889,
+          "slug": "shato-pino-exclusive-vione-risling-beloe-suhoe-115"
+        }
+      ]
+    },
+    {
+      "true_slug": "vinodelnya-byurne-kaberne-fran-krasnoe-suhoe-135",
+      "rank": 3,
+      "top_results": [
+        {
+          "index": 1713,
+          "score": 0.8750465512275696,
+          "slug": "vinodelnya-byurne-merlo-krasnoe-suhoe-14"
+        },
+        {
+          "index": 198,
+          "score": 0.8571747541427612,
+          "slug": "b-yu-rne-krasnostop-suhoe-krasnoe-classic"
+        },
+        {
+          "index": 1708,
+          "score": 0.8454605340957642,
+          "slug": "vinodelnya-byurne-kaberne-fran-krasnoe-suhoe-135"
+        },
+        {
+          "index": 1709,
+          "score": 0.8402093648910522,
+          "slug": "vinodelnya-byurne-kaberne-sovinon-krasnoe-suhoe-135"
+        },
+        {
+          "index": 200,
+          "score": 0.8390902280807495,
+          "slug": "b-yu-rne-malbek-krasnoe-suhoe"
+        }
+      ]
+    },
+    {
+      "true_slug": "golubitskoe-estate-noble-selection-red-blend-kaberne-sovinon-krasnoe-suhoe-136",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 747,
+          "score": 0.8736024498939514,
+          "slug": "golubitskoe-estate-noble-selection-red-blend-kaberne-sovinon-krasnoe-suhoe-136"
+        },
+        {
+          "index": 743,
+          "score": 0.8557378649711609,
+          "slug": "golubitskoe-estate-kaberne-sovinon-noble-selection-krasnoe-suhoe-133"
+        },
+        {
+          "index": 748,
+          "score": 0.8134355545043945,
+          "slug": "golubitskoe-estate-noble-selection-white-blend-shardone-beloe-suhoe-135"
+        },
+        {
+          "index": 751,
+          "score": 0.8082794547080994,
+          "slug": "golubitskoe-estate-red-blend-kaberne-sovinon-krasnoe-suhoe-136"
+        },
+        {
+          "index": 750,
+          "score": 0.8032840490341187,
+          "slug": "golubitskoe-estate-pino-nuar-rezerv-krasnoe-suhoe-132"
+        }
+      ]
+    },
+    {
+      "true_slug": "chateau-andre-merlo-krasnoe-suhoe-14",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 333,
+          "score": 0.8413181900978088,
+          "slug": "chateau-andre-merlo-krasnoe-suhoe-14"
+        },
+        {
+          "index": 330,
+          "score": 0.8362882733345032,
+          "slug": "chateau-andre-kaberne-fran-krasnoe-suhoe-14"
+        },
+        {
+          "index": 335,
+          "score": 0.8132017850875854,
+          "slug": "chateau-andre-pino-nuar-krasnoe-suhoe-14"
+        },
+        {
+          "index": 1508,
+          "score": 0.8131218552589417,
+          "slug": "usadba-divnomorskoe-merlot-merlo-krasnoe-suhoe-149"
+        },
+        {
+          "index": 339,
+          "score": 0.7844280004501343,
+          "slug": "chateau-andre-sovinon-blan-beloe-suhoe-13"
+        }
+      ]
+    },
+    {
+      "true_slug": "golubitskoe-estate-tte-de-cheval-blanc-de-blancs-shardone-beloe-bryut-12",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 758,
+          "score": 0.9113972187042236,
+          "slug": "golubitskoe-estate-tte-de-cheval-blanc-de-blancs-shardone-beloe-bryut-12"
+        },
+        {
+          "index": 761,
+          "score": 0.9002442359924316,
+          "slug": "golubitskoe-estate-tte-de-cheval-zero-dosage-ekstra-bryut-sovinon-blan-beloe-12"
+        },
+        {
+          "index": 759,
+          "score": 0.892510712146759,
+          "slug": "golubitskoe-estate-tte-de-cheval-bryut-risling-beloe-12"
+        },
+        {
+          "index": 760,
+          "score": 0.8778290152549744,
+          "slug": "golubitskoe-estate-tte-de-cheval-reserve-risling-beloe-bryut-125"
+        },
+        {
+          "index": 762,
+          "score": 0.7982450127601624,
+          "slug": "golubitskoe-estate-tte-de-chevall-roze-pino-nuar-rozovoe-bryut-12"
+        }
+      ]
+    },
+    {
+      "true_slug": "ferrum-winery-sovinon-blan-blush-beloe-suhoe-104",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 727,
+          "score": 0.7573023438453674,
+          "slug": "ferrum-winery-sovinon-blan-blush-beloe-suhoe-104"
+        },
+        {
+          "index": 725,
+          "score": 0.7477126717567444,
+          "slug": "ferrum-winery-sabernet-sauvignon-kaberne-sovinon-krasnoe-suhoe-14"
+        },
+        {
+          "index": 723,
+          "score": 0.7239782810211182,
+          "slug": "ferrum-winery-riesling-risling-reynskiy-beloe-suhoe-11"
+        },
+        {
+          "index": 726,
+          "score": 0.7187502384185791,
+          "slug": "ferrum-winery-saperavi-saperavi-krasnoe-suhoe-12"
+        },
+        {
+          "index": 271,
+          "score": 0.7002958655357361,
+          "slug": "belmas-winery-riesling-belmas-risling-beloe-suhoe-135"
+        }
+      ]
+    },
+    {
+      "true_slug": "czitronnyj-magaracha-sovinon-blan",
+      "rank": 3,
+      "top_results": [
+        {
+          "index": 1970,
+          "score": 0.8259940147399902,
+          "slug": "zhemchuzhnaya-9-czitron-shardone-1"
+        },
+        {
+          "index": 1980,
+          "score": 0.8259299993515015,
+          "slug": "zhemchuzhnaya-9-risling-sovinon-blan"
+        },
+        {
+          "index": 429,
+          "score": 0.825088620185852,
+          "slug": "czitronnyj-magaracha-sovinon-blan"
+        },
+        {
+          "index": 1969,
+          "score": 0.8155317902565002,
+          "slug": "zhemchuzhnaya-9-aligote-czitron"
+        },
+        {
+          "index": 1971,
+          "score": 0.8077504634857178,
+          "slug": "zhemchuzhnaya-9-czitron-shardone"
+        }
+      ]
+    },
+    {
+      "true_slug": "skalistyy-bereg-skalistyy-bereg-krasnostop-zolotovskiy-krasnoe-suhoe-133",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1372,
+          "score": 0.9355247020721436,
+          "slug": "skalistyy-bereg-skalistyy-bereg-krasnostop-zolotovskiy-krasnoe-suhoe-133"
+        },
+        {
+          "index": 1371,
+          "score": 0.8789123892784119,
+          "slug": "skalistyy-bereg-skalistyy-bereg-krasnaya-kniga-glava-2-merlo-krasnoe-suhoe-15"
+        },
+        {
+          "index": 1369,
+          "score": 0.8716846108436584,
+          "slug": "skalistyy-bereg-skalistyy-bereg-kaberne-sovinon-krasnoe-suhoe-15"
+        },
+        {
+          "index": 1368,
+          "score": 0.8693762421607971,
+          "slug": "skalistyy-bereg-skalistyy-bereg-kaberne-fran-krasnoe-suhoe-15"
+        },
+        {
+          "index": 1370,
+          "score": 0.8675808310508728,
+          "slug": "skalistyy-bereg-skalistyy-bereg-krasnaya-kniga-glava-1-kaberne-sovinon-krasnoe-suhoe-147"
+        }
+      ]
+    },
+    {
+      "true_slug": "dubinin-winery-merlo-roze-rozovoe-suhoe-125",
+      "rank": 2,
+      "top_results": [
+        {
+          "index": 549,
+          "score": 0.8407042622566223,
+          "slug": "dubinin-winery-roze-kaberne-fran-rozovoe-suhoe-13"
+        },
+        {
+          "index": 546,
+          "score": 0.8312309980392456,
+          "slug": "dubinin-winery-merlo-roze-rozovoe-suhoe-125"
+        },
+        {
+          "index": 785,
+          "score": 0.7945426106452942,
+          "slug": "gunko-winery-roze-kaberne-fran-rozovoe-suhoe-135"
+        },
+        {
+          "index": 1512,
+          "score": 0.7672191858291626,
+          "slug": "usadba-divnomorskoe-rose-vione-rozovoe-suhoe-125"
+        },
+        {
+          "index": 618,
+          "score": 0.7519501447677612,
+          "slug": "evolution-pinot-noir"
+        }
+      ]
+    },
+    {
+      "true_slug": "soyuz-vino-lavetti-rozovoe-polusladkoe-krasnye-sorta-vinograda-11",
+      "rank": 1,
+      "top_results": [
+        {
+          "index": 1437,
+          "score": 0.8301517963409424,
+          "slug": "soyuz-vino-lavetti-rozovoe-polusladkoe-krasnye-sorta-vinograda-11"
+        },
+        {
+          "index": 1435,
+          "score": 0.8113484382629395,
+          "slug": "soyuz-vino-lavetti-krasnoe-polusladkoe-krasnye-sorta-vinograda-11"
+        },
+        {
+          "index": 1436,
+          "score": 0.8109907507896423,
+          "slug": "soyuz-vino-lavetti-krasnoe-suhoe-krasnye-sorta-vinograda-11"
+        },
+        {
+          "index": 1434,
+          "score": 0.7670329213142395,
+          "slug": "soyuz-vino-lavetti-beloe-suhoe-belye-sorta-vinograda-11"
+        },
+        {
+          "index": 1433,
+          "score": 0.750673770904541,
+          "slug": "soyuz-vino-lavetti-beloe-polusladkoe-belye-sorta-vinograda-11"
+        }
+      ]
+    }
+  ]
+}
